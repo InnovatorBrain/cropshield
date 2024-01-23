@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/favicon.ico" alt="BytZen" width="70px">
+  <img src="/src/assets/NavBar/Navbar-Logo.png" alt="BytZen" width="70px">
 </p>
 
 
