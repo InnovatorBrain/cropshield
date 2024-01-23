@@ -1,0 +1,197 @@
+.Carousel_Container {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/SlideImage/slideImage.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Carousel_Left_side {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+    align-items: flex-start;
+    align-self: center;
+    margin: 10rem 5rem auto 5rem;
+}
+
+.Carousel_tite_one {
+    font-size: 60px;
+    font-family: var(--font-base);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.Carousel_tite_two {
+    font-size: 60px;
+    font-family: var(--font-Railway);
+    font-weight: 100;
+    color: white;
+
+}
+
+.Carousel_title_text {
+    font-size: 16px;
+    font-family: var(--font-base);
+    color: white;
+    margin-bottom: 50px;
+
+
+}
+
+/* Buttom Component */
+button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #c4e201;
+}
+
+button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+    transform: translateX(5px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+/* Media Queries */
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .Carousel_Container {
+        height: 95vh;
+        justify-content: center;
+    }
+
+    .Carousel_Left_side {
+        max-width: 100%;
+        margin: 20rem 5rem auto 5rem;
+        align-items: flex-start;
+    }
+
+    .Carousel_tite_one {
+        font-size: 25px;
+        text-align: start;
+        z-index: -1;
+    }
+
+    .Carousel_tite_two {
+        font-size: 25px;
+        font-weight: 100;
+        color: white;
+
+    }
+
+    .Carousel_title_text {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 2rem;
+        font-weight: 100;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .Carousel_Container {
+        height: 95vh;
+        justify-content: center;
+    }
+
+    .Carousel_Left_side {
+        max-width: 100%;
+        margin: 15rem 5rem auto 5rem;
+        align-items: flex-start;
+    }
+
+    .Carousel_tite_one {
+        font-size: 40px;
+        text-align: start;
+        z-index: -1;
+    }
+
+    .Carousel_tite_two {
+        font-size: 40px;
+        font-weight: 100;
+        color: white;
+
+    }
+
+    .Carousel_title_text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .Carousel_Container {
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .Carousel_Left_side {
+        max-width: 100%;
+        margin: 15rem 5rem auto 5rem;
+        align-items: flex-start;
+    }
+
+    .Carousel_tite_one {
+        font-size: 60px;
+        text-align: start;
+        z-index: -1;
+    }
+
+    .Carousel_tite_two {
+        font-size: 60px;
+        font-weight: 100;
+        color: white;
+
+    }
+
+    .Carousel_title_text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Extra-large screens (large desktops) */
+@media only screen and (min-width: 1201px) {}
