@@ -1,0 +1,124 @@
+.upNav_container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-Grey);
+    height: 45px;
+    align-items: center;
+}
+
+.upNav_contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin-left: 85px;
+    max-width: 70%;
+
+}
+
+.upNav_contacts_ {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.upNav_contacts_icons {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--color-LightGreen_b);
+}
+
+.upNav_text {
+    font-family: var(--font-base);
+    font-size: 14px;
+    color: #aaba9f;
+    font-weight: 300;
+}
+
+.upNav_socialmedia {
+    justify-content: right;
+    margin-right: 100px;
+}
+
+.upNav_socialmedia_icons {
+    font-size: 16px;
+    color: var(--color-LightGreen_a);
+    margin: auto 8px;
+    cursor: pointer;
+}
+
+.upNav_socialmedia_icons:hover {
+    color: white;
+}
+
+
+
+
+
+
+/* Default styles for all screen sizes */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .upNav_container {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .upNav_contacts {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .upNav_contacts_ {
+        display: flex;
+        align-items: center;
+        margin: 12px auto;
+    }
+
+    .upNav_socialmedia {
+        justify-content: center;
+        margin: auto auto 12px auto;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .upNav_container {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+
+    .upNav_contacts {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .upNav_contacts_ {
+        display: flex;
+        align-items: center;
+        margin: 12px;
+
+    }
+
+    .upNav_socialmedia {
+        justify-content: center;
+        margin: auto auto 12px auto;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {}
+
+/* Extra-large screens (large desktops) */
+@media only screen and (min-width: 1201px) {}

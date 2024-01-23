@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;700&family=Quicksand&display=swap');
+
+:root {
+  --font-base: 'Poppins', sans-serif;
+  --font-accent: 'Quicksand', sans-serif;
+  --font-dancing: 'Dancing Script', cursive;
+
+  --color-Green: #51f143;
+  --color-LightGreen: #9BF244;
+  --color-LightGreen_a: #81b221;
+  --color-LightGreen_b: #6a9930;
+  --color-DarkGreen: #0F2E0F;
+  --color-Yellow: #FCDB5A;
+  --color-Grey: #2e3529;
+
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
