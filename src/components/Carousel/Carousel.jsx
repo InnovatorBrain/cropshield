@@ -9,7 +9,7 @@ function Carousel() {
                 <div className="Carousel_Left_side">
                     <h1 className="Carousel_tite_one">Harvesting Confidence, </h1>
                     <p className="Carousel_tite_two">Ensuring Agricultural Futures</p>
-                    <p className="Carousel_title_text">The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+                    <p className="Carousel_title_text">Elevate Agricultural Futures through AI, Blockchain, and NFT-powered Crop Insurance Solutions.</p>
                     {/* BUTTON STARTS FORM HERE */}
                     <button>
                         <span>Discover More</span>
