@@ -44,9 +44,9 @@ const Navbar = () => {
             <li className='p-links'><Link to="/AboutUs">About Us</Link></li>
             {/* <li className='p-links'><Link to="/Gallery">Insurance</Link></li> */}
             <div>
-              <div className="dropdown">
+              <div className="dropdown" id="nav-special-id-dropdown">
                 <ul className='p-links' id='nav-drop-aligning'>
-                  <li><Link to="/Gallery">Insurance</Link><RiArrowDropDownLine className="dropdown-icon" /></li>
+                  <li><Link to="">Insurance</Link><RiArrowDropDownLine className="dropdown-icon" /></li>
                 </ul>
                 <div className="dropdown-content">
                   <a href="Insurance">Insurance</a>
@@ -75,7 +75,7 @@ const Navbar = () => {
                   <li><Link to="/AboutUs" onClick={() => setToggleMenu(false)}>AboutUs</Link></li>
                   {/* <li><Link to="/Gallery" onClick={() => setToggleMenu(false)}>Gallery</Link></li> */}
                   <li className='nav-drop-in-togle'>
-                    <div className="dropdown">
+                    <div className="dropdown" id='nav-drop-in-togle-id'>
                       <ul className='p-links' id='nav-drop-aligning'>
                         <li><Link to="">Insurance</Link><RiArrowDropDownLine className="dropdown-icon" /></li>
                       </ul>
