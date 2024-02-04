@@ -26,11 +26,8 @@ function Carousel() {
                 </div>
                 <div className="Carousel_Right_side">
                     <div className="Carousel_Video_Button">
-
                     </div>
-
                 </div>
-
             </div>
 
         </>

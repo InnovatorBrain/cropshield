@@ -3,10 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Components
-import UpNav from './components/UpNav/UpNav';
 import SplashScreen from './components/SplashScreen/SplashScreen';
 import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
+import Okies from './components/Okies/Okies';
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   // SplashScreen
@@ -27,8 +30,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             {/* Home */}
-            <Route path="/" element={<div className='HOME'><UpNav /><Navbar /><Carousel /> </div>} />
-            <Route path="home/" element={<div className='HOME'><UpNav /><Navbar /><Carousel /> </div>} />
+            <Route path="/" element={<div className='HOME'><Navbar /><Carousel /><Okies /> <Footer /></div>} />
+            <Route path="home/" element={<div className='HOME'><Navbar /><Carousel /> <Okies /><Footer /></div>} />
           </Routes>
         </BrowserRouter>
       )}

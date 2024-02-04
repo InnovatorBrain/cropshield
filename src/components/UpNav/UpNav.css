@@ -1,9 +1,12 @@
 .upNav_container {
+    position: sticky;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     background-color: var(--color-Grey);
     height: 45px;
     align-items: center;
+
 }
 
 .upNav_contacts {
