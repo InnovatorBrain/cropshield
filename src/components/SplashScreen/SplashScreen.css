@@ -35,7 +35,7 @@
     position: absolute;
     width: 50%;
     height: 150%;
-    background: var(--color-DarkGreen);
+    background:var(--color-LightGreen_b);
     transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
     animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
   }

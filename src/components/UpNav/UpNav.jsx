@@ -1,13 +1,10 @@
 import React from 'react'
 import "./UpNav.css"
 
-
 // Icons
 import { ImPhone } from "react-icons/im";
-
 import { LuMail } from "react-icons/lu";
 import { LuAlarmClock } from "react-icons/lu";
-
 
 // Social Media Icons
 import { FaTwitter } from "react-icons/fa";
@@ -16,6 +13,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrGoogle } from "react-icons/gr";
 
 function UpNav() {
+
     return (
         <>
             <div className="upNav_container">
