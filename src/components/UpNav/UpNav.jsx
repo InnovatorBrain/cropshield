@@ -3,7 +3,6 @@ import "./UpNav.css"
 
 // Icons
 import { ImPhone } from "react-icons/im";
-
 import { LuMail } from "react-icons/lu";
 import { LuAlarmClock } from "react-icons/lu";
 
