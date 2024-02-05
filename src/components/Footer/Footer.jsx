@@ -15,10 +15,10 @@ const Footer = () => {
                 About Us
               </li>
               <li><Link to="/about">About Us Overview</Link></li>
-              <li><Link to="/leadership">Leadership Team</Link></li>
-              <li><Link to="/values">Values In Action</Link></li>
-              <li><Link to="/investor">Investor Relations</Link></li>
-              <li><Link to="/news">News & Notifications</Link></li>
+              <li><Link to="">Feedback</Link></li>
+              <li><Link to="">Community</Link></li>
+              <li><Link to="">Crop Insurance AI</Link></li>
+              <li><Link to="">Blockchain Solutions</Link></li>
             </ul>
           </div>
           <div className="Footer_Services_Section">
@@ -26,32 +26,31 @@ const Footer = () => {
               <li className="Footer_Services_title">
                 Services
               </li>
-              <li><Link to="/services">Services Overview</Link></li>
-              <li><Link to="/mobile-order">Mobile Order & Pay</Link></li>
-              <li><Link to="/trending">Trending Now</Link></li>
-              <li><Link to="/delivery">Delivery®</Link></li>
-              <li><Link to="/cafe">Café®</Link></li>
-              <li><Link to="/playplaces">PlayPlaces & Parties</Link></li>
-              <li><Link to="/merchandise">Merchandise</Link></li>
+              <li><Link to="">Terms of Service</Link></li>
+              <li><Link to="">Trust, Safety & Security</Link></li>
+              <li><Link to="">Fast & Automated Claim <br></br>Processing</Link></li>
+              <li><Link to="">Monitoring Tools</Link></li>
+              <li><Link to="">Blockchain Solutions</Link></li>
+              <li><Link to="">Partnership Opportunities</Link></li>
             </ul>
           </div>
           <div className="Footer_ContactUs_Section">
             <ul>
               <li className="Footer_ContactUs_title">
-                ContactUs
+                Contact Us
               </li>
-              <li><Link to="/contact">Contact Us Overview</Link></li>
-              <li><Link to="/gift-card">Gift Card FAQs</Link></li>
-              <li><Link to="/donations">Donations</Link></li>
-              <li><Link to="/employment">Employment</Link></li>
-              <li><Link to="/faq">Frequently Asked<br />Questions</Link></li>
+              <li><Link to="">Customer Support</Link></li>
+              <li><Link to="">Help & Support</Link></li>
+              <li><Link to="">FAQs</Link></li>
+              <li><Link to="">Email Support</Link></li>
+              <li><Link to="">Live Chat and<br />Questions</Link></li>
             </ul>
           </div>
 
           <div className="Footer_Images_Section">
             <div className="appStoreImageOne">
               <h3>Get a Newslatter</h3>
-              <p>Sign up for our newsletter to hear our latest scientific and product updates</p>
+              <p>Sign up for our newsletter to hear our latest insurance Policies and updates</p>
             </div>
             <div className="appStoreImageTwo">
               <div className="form-control">
@@ -111,7 +110,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <li className='AllRightReserve'>© 2017 - 2023 Cropshield®. All Rights Reserved</li>
+          <li className='AllRightReserve'>© 2020 - 2024 Cropshield®. All Rights Reserved</li>
 
         </div>
       </div>

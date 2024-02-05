@@ -1,4 +1,7 @@
 .Footer-main-container {
+    position: relative;
+    z-index: 1 !important;
+    margin-top: 800px;
     background-color: #001e00;
     color: white !important;
     padding: .5rem 2rem 0 2rem;
@@ -82,6 +85,7 @@ li:hover {
 .appStoreImageOne>h3 {
     font-family: var(--font-base);
     font-size: 24px;
+    color: var(--color-Yellow);
 }
 
 
@@ -130,18 +134,14 @@ li:hover {
     transform: translateY(-30px);
 }
 
-
-
 /* Subscribe section end */
 
-
 .thin-line {
-    width: 80%;
+    width: 90%;
     margin: 0 auto 1rem auto;
     height: 0.15px;
     background-color: white;
 }
-
 
 .Footer_SocialMedia_Section_cont {
     margin: 0;
@@ -159,7 +159,6 @@ li:hover {
     width: 49%;
 
 }
-
 
 .Footer_SocialMedia_Ul {
     display: flex;
@@ -192,14 +191,12 @@ li:hover {
     position: relative;
     display: inline-block;
     padding: 0;
-    /* Set padding to zero */
     transition: transform 0.2s ease-in-out;
-    /* Add a smooth transition for scaling */
 }
 
 .Footer_SocialMedia_Ul li a:hover {
     transform: scale(1.1);
-    /* Scale up on hover */
+    
 }
 
 .Footer_SocialMedia_Ul li a:hover::before {
@@ -238,6 +235,9 @@ li:hover {
     color: white;
     text-decoration: none;
 }
+
+
+
 
 /* Extra small devices (phones) */
 @media only screen and (max-width: 576px) {
