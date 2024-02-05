@@ -58,7 +58,7 @@ button {
     transition: all .2s;
     padding: 10px 20px;
     border-radius: 100px;
-    background: #cfef00;
+    background: var(--color-Yellow);
     border: 1px solid transparent;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-    background: #c4e201;
+    background: var(--color-LightGreen_a);
 }
 
 button>svg {

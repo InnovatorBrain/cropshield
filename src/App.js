@@ -8,8 +8,6 @@ import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
 
-
-
 function App() {
   // SplashScreen
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +27,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             {/* Home */}
-            <Route path="/" element={<div className='HOME'><Navbar /><Carousel /> </div>} />
+            <Route path="/" element={<div className='HOME'><Navbar /><Carousel /> <Footer /></div>} />
             <Route path="home/" element={<div className='HOME'><Navbar /><Carousel /> <Footer /></div>} />
           </Routes>
         </BrowserRouter>
