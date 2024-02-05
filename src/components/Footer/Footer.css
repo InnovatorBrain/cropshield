@@ -1,11 +1,18 @@
+.Footer-main-container {
+    background-color: #001e00;
+    color: white !important;
+    padding: .5rem 2rem 0 2rem;
+}
+
 .Footer_Container {
-    margin: 3rem 4rem;
+    margin: 2rem 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     /* list-style-type: none; */
     font-family: var(--font-base);
     align-content: center;
+
 }
 
 .Footer_AboutUs_Section,
@@ -25,10 +32,18 @@
     margin: 1.5rem auto;
 }
 
+.Footer_AboutUs_title:hover,
+.Footer_Services_title:hover,
+.Footer_ContactUs_title:hover {
+    color: white;
+    text-decoration: none;
+}
+
 
 li {
     list-style-type: none;
     margin: .5rem auto;
+    font-size: 15px;
 
 }
 
@@ -38,30 +53,94 @@ li {
     transition-duration: 400ms;
     transition-property: color;
 }
+
 li:hover {
-    color: var(--color-orange);
+    color: var(--color-LightGreen);
+    text-decoration: underline;
 }
 
-
-
-
-
-
-
-
+/* Subscribe section start */
 .Footer_Images_Section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 25%;
+
 }
 
 .appStoreImageOne,
 .appStoreImageTwo {
-    width: 40%;
-    margin: 1rem 3rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
+.appStoreImageOne>h3 {
+    font-family: var(--font-base);
+    font-size: 24px;
+}
+
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: var(--color-LightGreen);
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: var(--color-LightGreen);
+    transform: translateY(-30px);
+}
+
+
+
+/* Subscribe section end */
+
+
+.thin-line {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    height: 0.15px;
+    background-color: white;
+}
 
 
 .Footer_SocialMedia_Section_cont {
@@ -73,18 +152,33 @@ li:hover {
 }
 
 .Footer_SocialMedia_Section {
-    margin: 0;
     display: flex;
-    flex-direction: row;
-    width: 40%;
     justify-content: flex-start;
+    margin: 0;
+    flex-direction: row;
+    width: 49%;
+
 }
+
 
 .Footer_SocialMedia_Ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin: auto;
+
+
+}
+
+.Footer_FollowUs_Text {
+    font-family: var(--font-base);
+    font-size: 16px;
+    cursor: default;
+}
+
+.Footer_FollowUs_Text:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .Footer_SocialMedia_Ul li a {
@@ -95,16 +189,44 @@ li:hover {
     font-size: 22px;
     margin-bottom: 15px;
     align-items: center;
-
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    /* Set padding to zero */
+    transition: transform 0.2s ease-in-out;
+    /* Add a smooth transition for scaling */
 }
 
+.Footer_SocialMedia_Ul li a:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+.Footer_SocialMedia_Ul li a:hover::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 120%;
+    height: 100%;
+    border: 2px solid white;
+    box-sizing: content-box;
+    border-radius: 50%;
+    transform: scale(1.2);
+    animation: heartbeat 1s infinite alternate;
+}
+
+@keyframes heartbeat {
+    to {
+        transform: scale(1.1);
+    }
+}
 
 .AllRightReserve {
     display: flex;
     justify-content: flex-end;
-    /* Align content to the right */
     align-items: center;
-    width: 50%;
+    width: 35%;
     align-content: center;
     font-family: var(--font-base);
     font-size: 14px;
@@ -112,11 +234,10 @@ li:hover {
     margin-bottom: 15px;
 }
 
-
-
-
-
-
+.AllRightReserve:hover {
+    color: white;
+    text-decoration: none;
+}
 
 /* Extra small devices (phones) */
 @media only screen and (max-width: 576px) {
