@@ -1,7 +1,7 @@
-import React from 'react'
-// import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import images from '../../constants/images'
+import clickSound from '../../assets/Audio/clearmouse.mp3'
 import UpNav from '../UpNav/UpNav';
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -37,6 +37,22 @@ const Navbar = () => {
   //     window.removeEventListener('scroll', handleScroll);
   //   };
   // }, [prevScrollPos]);
+  // -------------- NAV-EFFECT-SETTINGS END--------------------
+
+  // ---------------CLICK SOUND--------------
+  const [audio] = useState(new Audio(clickSound));
+
+  const playClickSound = () => {
+    audio.play();
+  };
+
+  useEffect(() => {
+    // Clean up the audio instance when the component unmounts
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, [audio]);
 
   return (
     // visible ? (
@@ -44,7 +60,7 @@ const Navbar = () => {
       < UpNav />
       <nav className='app__navbar'>
         <div className='app__navbar-logo'>
-          <Link to="/Home">
+          <Link to="/Home" onClick={playClickSound}>
             <img src={images.NavbarLogo} alt='app logo' />
           </Link>
         </div>
@@ -81,7 +97,7 @@ const Navbar = () => {
           <li className='p-links'><Link to="/Contact">Contact</Link></li>
 
         </ul>
-        <div className='app__navbar-login'>
+        <div className='app__navbar-login' >
           <Link to="/Dashboard" className='p-links' ><IoPersonSharp size={25} title='Dashboard' /></Link>
         </div>
         <div className='app__navbar-login'>
