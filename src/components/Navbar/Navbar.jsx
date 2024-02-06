@@ -13,33 +13,28 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   // -------------- NAV-EFFECT-SETTINGS START--------------------
 
-  // const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  // const [visible, setVisible] = useState(true);
+  const [isSticky, setIsSticky] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollPos = window.pageYOffset;
-  //     const isScrollingDown = prevScrollPos < currentScrollPos;
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
 
-  //     if (!isScrollingDown || currentScrollPos <= 0) {
-  //       setVisible(true);
-  //     } else {
-  //       setVisible(currentScrollPos <= 500);
-  //     }
+    if (scrollPosition >= 0) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
 
-  //     setPrevScrollPos(currentScrollPos);
-  //   };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
 
-  //   setVisible(window.pageYOffset <= 500);
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [prevScrollPos]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   // -------------- NAV-EFFECT-SETTINGS END--------------------
 
-  // ---------------CLICK SOUND--------------
+  // ---------------CLICK SOUND Start--------------
   const [audio] = useState(new Audio(clickSound));
 
   const playClickSound = () => {
@@ -53,12 +48,13 @@ const Navbar = () => {
       audio.currentTime = 0;
     };
   }, [audio]);
+// ---------------CLICK SOUND End--------------
 
   return (
     // visible ? (
     <>
-      < UpNav />
-      <nav className='app__navbar'>
+      <UpNav />
+      <nav className={`app__navbar ${isSticky ? 'sticky' : ''}`}>
         <div className='app__navbar-logo'>
           <Link to="/Home" onClick={playClickSound}>
             <img src={images.NavbarLogo} alt='app logo' />

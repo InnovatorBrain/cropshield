@@ -1,5 +1,5 @@
 .app__navbar {
-    position: sticky;
+    position: fixed;
     z-index: 5;
     width: 100%;
     height: 80px;
@@ -12,6 +12,14 @@
 
 }
 
+/* --- Navbar Effect --- */
+.app__navbar.sticky {
+    position: sticky;
+    top: -5px;
+    background-color: rgba(247, 247, 247, 0.95);
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 .app__navbar-logo {
     position: absolute;
