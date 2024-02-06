@@ -11,7 +11,8 @@
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    max-height: 800px;
+    /* max-height: 800px; */
+    max-height: 700px;
 }
 
 .Carousel_Left_side {

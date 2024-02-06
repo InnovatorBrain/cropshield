@@ -1,7 +1,7 @@
 .Footer-main-container {
     position: relative;
     z-index: 1 !important;
-    margin-top: 800px;
+    margin-top: 5rem;
     background-color: #001e00;
     color: white !important;
     padding: .5rem 2rem 0 2rem;
