@@ -95,7 +95,7 @@ const Navbar = () => {
 
         </ul>
         <div className='app__navbar-login' >
-          <Link to="/Dashboard" className='p-links' ><IoPersonSharp size={25} title='Dashboard' /></Link>
+          <Link to="/Dashboard" className='p-links' ><IoPersonSharp size={25} title='Dashboard' onClick={playClickSound} /></Link>
         </div>
         <div className='app__navbar-login'>
           <Link to="/Register" className='p-links' id='p-links--' title='Register Now'>Get Started</Link>
