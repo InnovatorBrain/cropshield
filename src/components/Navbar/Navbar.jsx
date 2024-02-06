@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import images from '../../constants/images'
 import clickSound from '../../assets/Audio/clearmouse.mp3'
+import { Link } from 'react-router-dom'
+// Componenets
 import UpNav from '../UpNav/UpNav';
-import { RiArrowDropDownLine } from "react-icons/ri";
 
+// Icons
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoPersonSharp } from "react-icons/io5";
 import { TfiClose } from "react-icons/tfi";
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   // -------------- NAV-EFFECT-SETTINGS START--------------------
@@ -48,10 +50,9 @@ const Navbar = () => {
       audio.currentTime = 0;
     };
   }, [audio]);
-// ---------------CLICK SOUND End--------------
+  // ---------------CLICK SOUND End--------------
 
   return (
-    // visible ? (
     <>
       <UpNav />
       <nav className={`app__navbar ${isSticky ? 'sticky' : ''}`}>
@@ -107,7 +108,6 @@ const Navbar = () => {
               <ul className="app__navbar-smallscreen_links">
                 <li><Link to="/Home" onClick={() => setToggleMenu(false)}>Home</Link></li>
                 <li><Link to="/AboutUs" onClick={() => setToggleMenu(false)}>AboutUs</Link></li>
-                {/* <li><Link to="/Gallery" onClick={() => setToggleMenu(false)}>Gallery</Link></li> */}
                 <li className='nav-drop-in-togle'>
                   <div className="dropdown" id='nav-drop-in-togle-id'>
                     <ul className='p-links' id='nav-drop-aligning'>
@@ -145,9 +145,7 @@ const Navbar = () => {
           )}
         </div>
       </nav >
-
     </>
-    // ) : ""
   );
 }
 

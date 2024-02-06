@@ -98,7 +98,7 @@
     transition-property: width, left;
 }
 
-/* Dropdown-Start */
+/* --------Dropdown-Start-------- */
 #nav-drop-aligning {
     padding-top: 19px;
     padding-bottom: 19px;
@@ -201,7 +201,7 @@
     transform: translateY(3px);
 }
 
-/* Dropdown-End */
+/* -----------Dropdown-End---------- */
 
 /* Login... */
 .app__navbar-login {
@@ -280,6 +280,9 @@
 
 
 
+
+
+/* ------------MEDIA QUERIES-------------- */
 @media screen and (min-width: 2000px) {
     .app__navbar-logo img {
         width: 210px;
