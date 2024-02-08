@@ -35,7 +35,7 @@ function App() {
             <Route path="/" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="Harnessing Technology for Crop Prosperity" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
               <OfferLogo /><GetInTouch /><Footer /></div></>} />
             <Route path="/home" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="Harnessing Technology for Crop Prosperity" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><Footer /></div></>} />
+              <OfferLogo /><GetInTouch /><Footer /></div></>} />
             {/* AboutUs */}
             <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /> <Footer /></div></>} />
             {/* Dashboard */}

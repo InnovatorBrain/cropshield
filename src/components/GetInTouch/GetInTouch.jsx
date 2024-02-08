@@ -1,5 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import "./GetInTouch.css";
-import React, { useState } from 'react';
+import clickSound from '../../assets/Audio/clearmouse.mp3'
 import axios from 'axios';
 import GetInTouchMap from "./GetInTouchMap";
 
@@ -32,6 +33,22 @@ const GetInTouch = () => {
         }
     };
 
+
+    // ---------------CLICK SOUND Start--------------
+    const [audio] = useState(new Audio(clickSound));
+
+    const playClickSound = () => {
+        audio.play();
+    };
+
+    useEffect(() => {
+        // Clean up the audio instance when the component unmounts
+        return () => {
+            audio.pause();
+            audio.currentTime = 0;
+        };
+    }, [audio]);
+    // ---------------CLICK SOUND End--------------
     return (
         <>
             <div className="GetInTouchContainer">
@@ -77,7 +94,7 @@ const GetInTouch = () => {
                             value={formData.message}
                             onChange={handleChange}
                         />
-                        <button type="submit" className="submit">Register</button>
+                        <button type="submit" className="submit" onClick={playClickSound}>Register</button>
                     </form>
                 </div>
 
