@@ -197,7 +197,7 @@ li:hover {
 
 .Footer_SocialMedia_Ul li a:hover {
     transform: scale(1.1);
-    
+
 }
 
 .Footer_SocialMedia_Ul li a:hover::before {

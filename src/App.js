@@ -9,6 +9,9 @@ import Carousel from './components/Carousel/Carousel';
 import Footer from './components/Footer/Footer';
 import SubHeading from './components/SubHeading/SubHeading';
 import OfferLogo from './components/OfferLogo/OfferLogo';
+import GetInTouch from './components/GetInTouch/GetInTouch';
+
+// Testing
 
 function App() {
   // SplashScreen
@@ -30,9 +33,9 @@ function App() {
           <Routes>
             {/* Home */}
             <Route path="/" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="Harnessing Technology for Crop Prosperity" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-            <OfferLogo /><Footer /></div></>} />
+              <OfferLogo /><GetInTouch /><Footer /></div></>} />
             <Route path="/home" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="Harnessing Technology for Crop Prosperity" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-            <OfferLogo /><Footer /></div></>} />
+              <OfferLogo /><Footer /></div></>} />
             {/* AboutUs */}
             <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /> <Footer /></div></>} />
             {/* Dashboard */}

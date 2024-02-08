@@ -1,0 +1,275 @@
+.GetInTouchContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    background-color: var(--color-Grey);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 1rem;
+    width: 100%;
+    height: auto;
+}
+
+/* LEFT SIDE */
+.GetInTouchLeftSide {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    flex-direction: column;
+    margin: auto 2rem;
+
+
+}
+
+.GetInTouchHint {
+    text-align: start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 25px;
+    color: var(--color-Yellow);
+    font-weight: 500;
+}
+
+.GetInTouchTitle {
+    text-align: start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    margin: 10px auto;
+
+}
+
+.GetInTouchText {
+    text-align: start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 14px;
+    color: white;
+    margin: auto auto 55px auto;
+
+}
+
+/* FORMCSS */
+.form {
+    max-width: 90%;
+    width: 100%;
+    background-color: var(--color-Grey);
+    padding: 20px;
+    box-shadow: 0px 0px 0px 4px rgba(52, 52, 53, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+.label {
+    color: rgb(255, 255, 255, 0.7);
+    margin-bottom: 4px;
+    font-family: var(--font-base);
+    font-size: 16px;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-Grey);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+}
+
+.input:valid {
+    border: 1px solid var(--color-LightGreen_a);
+}
+
+.input:invalid {
+    border: 1px solid rgba(14, 14, 14, 0.205);
+}
+
+.submit {
+    background-color: var(--color-Yellow);
+    color: var(--color-DarkGreen);
+    border: none;
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit:hover {
+    background-color: var(--color-LightGreen_a);
+    color: white;
+}
+
+
+
+/* RIGHT SIDE */
+.GetInTouchRightSide {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    text-align: start;
+    max-width: 50%;
+    width: 35%;
+    height: auto;
+    flex-direction: column;
+}
+
+.GetInTouchVisitUsTitle {
+    display: flex;
+    font-family: var(--font-base);
+    text-align: flex-start;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto 2rem 0;
+}
+
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
+    .GetInTouchContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* LEFT SIDE */
+    .GetInTouchLeftSide {
+        max-width: 100%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+    .GetInTouchTitle {
+        font-size: 35px;
+    }
+
+
+    .form {
+        max-width: 90%;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    /* RIGHT SIDE */
+    .GetInTouchRightSide {
+        display: flex;
+        text-align: flex-start;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .GetInTouchVisitUsTitle {
+        font-size: 25px;
+    }
+
+
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .GetInTouchContainer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 2rem;
+    }
+
+    /* LEFT SIDE */
+    .GetInTouchLeftSide {
+        max-width: 100%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+    .GetInTouchTitle {
+        font-size: 35px;
+    }
+
+
+    .form {
+        max-width: 90%;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    /* RIGHT SIDE */
+    .GetInTouchRightSide {
+        display: flex;
+        text-align: flex-start;
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .GetInTouchVisitUsTitle {
+        font-size: 25px;
+    }
+
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .GetInTouchContainer {
+        flex-direction: row;
+        justify-content: center;
+        padding: 5rem 2rem;
+    }
+
+    /* LEFT SIDE */
+    .GetInTouchLeftSide {
+        max-width: 50%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+    .GetInTouchTitle {
+        font-size: 35px;
+    }
+
+
+    .form {
+        max-width: 90%;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    /* RIGHT SIDE */
+    .GetInTouchRightSide {
+        display: flex;
+        text-align: flex-start;
+        max-width: 50%;
+        width: 50%;
+    }
+
+    .GetInTouchVisitUsTitle {
+        font-size: 25px;
+    }
+}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}
