@@ -10,7 +10,8 @@ import Footer from './components/Footer/Footer';
 import SubHeading from './components/SubHeading/SubHeading';
 import OfferLogo from './components/OfferLogo/OfferLogo';
 import GetInTouch from './components/GetInTouch/GetInTouch';
-
+import RegisterPage from './components/RegisterPage/RegisterPage';
+import SignInPage from './components/SignInPage/SignInPage';
 // Testing
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
             <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /> <Footer /></div></>} />
             {/* Dashboard */}
             <Route path="/Dashboard" element={<><div className='DASHBOARD'><Navbar /> <Footer /></div></>} />
+            {/* Register */}
+            <Route path="/Register" element={<><div className='Register'><RegisterPage /></div></>} />
+            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /></div></>} />
           </Routes>
         </BrowserRouter>
       )}

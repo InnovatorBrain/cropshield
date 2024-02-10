@@ -1,0 +1,311 @@
+.RegisterPageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    background-color: var(--color-Grey);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+/* LEFTSIDE */
+.RegisterPageLefttSide {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    flex-direction: column;
+    margin: auto 2rem;
+
+}
+
+.breadcrumb {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+
+}
+
+.Register-page-homeIcon {
+    color: white;
+    font-size: 18px;
+}
+
+.breadcrumb>span {
+    color: white;
+    font-family: var(--font-accent);
+    font-size: 18px;
+}
+
+.RegisterPageTitle {
+    display: flex;
+    font-family: var(--font-base);
+    text-align: flex-start;
+    color: var(--color-Yellow);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 auto 2rem 0;
+}
+
+.RegisterPageText {
+    text-align: start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 14px;
+    color: white;
+    margin: auto auto 55px auto;
+
+}
+
+
+/* RightSide */
+
+.RegisterPageRightSide {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    text-align: start;
+    max-width: 50%;
+    width: 45%;
+    height: auto;
+    flex-direction: column;
+}
+
+
+/* FORMCSS */
+.form {
+    max-width: 90%;
+    width: 100%;
+    background-color: var(--color-Grey);
+    padding: 20px;
+    box-shadow: 0px 0px 0px 4px rgba(52, 52, 53, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+
+
+.form-title {
+    text-align: start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 24px;
+    color: white;
+    margin: auto;
+}
+
+.form-title-text {
+    text-align: flex-start;
+    font-family: var(--font-base);
+    color: white;
+    font-size: 14px;
+    color: white;
+    margin: 10px auto 10px 0px;
+}
+
+.Register-form-forgetPassword {
+    font-family: var(--font-base);
+    color: white;
+    font-size: 12px;
+}
+
+.Register-form-forgetPassword:hover {
+    text-decoration: underline;
+}
+
+.Register-page-if-accountexist {
+    display: flex;
+    justify-content: center;
+    /* horizontally center align */
+    align-items: center;
+    /* vertically center align */
+    text-align: center;
+    width: 100%;
+}
+
+.Register-page-if-accounttext {
+    font-family: var(--font-base);
+    color: white;
+    font-size: 12px;
+}
+
+.Register-page-if-accountlink {
+    font-family: var(--font-base);
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.Register-page-if-accountlink:hover {
+    text-decoration: underline;
+    color: var(--color-LightGreen_a);
+}
+
+
+.label {
+    color: rgb(255, 255, 255, 0.7);
+    margin-bottom: 4px;
+    font-family: var(--font-base);
+    font-size: 16px;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--color-Grey);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+}
+
+.input:valid {
+    border: 1px solid var(--color-LightGreen_a);
+}
+
+.input:invalid {
+    border: 1px solid rgba(14, 14, 14, 0.205);
+}
+
+.submit {
+    background-color: var(--color-Yellow);
+    color: var(--color-DarkGreen);
+    border: none;
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit:hover {
+    background-color: var(--color-LightGreen_a);
+    color: white;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
+    .RegisterPageContainer {
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    /* LEFTSIDE */
+    .RegisterPageLefttSide {
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .RegisterPageTitle {
+        font-size: 30px;
+    }
+
+    .RegisterPageText {
+        font-size: 14px;
+    }
+
+    /* RightSide */
+    .RegisterPageRightSide {
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .RegisterPageContainer {
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    /* LEFTSIDE */
+    .RegisterPageLefttSide {
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .RegisterPageTitle {
+        font-size: 30px;
+    }
+
+    .RegisterPageText {
+        font-size: 14px;
+    }
+
+    /* RightSide */
+    .RegisterPageRightSide {
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .RegisterPageContainer {
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    /* LEFTSIDE */
+    .RegisterPageLefttSide {
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .RegisterPageTitle {
+        font-size: 30px;
+    }
+
+    .RegisterPageText {
+        font-size: 14px;
+    }
+
+    /* RightSide */
+    .RegisterPageRightSide {
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}

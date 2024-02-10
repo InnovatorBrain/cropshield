@@ -21,8 +21,6 @@
     max-width: 50%;
     flex-direction: column;
     margin: auto 2rem;
-
-
 }
 
 .GetInTouchHint {
@@ -143,7 +141,6 @@
     font-weight: bold;
     margin: 0 auto 2rem 0;
 }
-
 
 
 /* Media query for screens smaller than 576px (e.g., smartphones) */
