@@ -9,9 +9,9 @@
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 3rem;
+    padding: auto 3rem;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 /* LEFTSIDE */
@@ -182,6 +182,13 @@
     border: 1px solid rgba(14, 14, 14, 0.205);
 }
 
+.error {
+    color: Red;
+    font-family: var(--font-Railway);
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .submit {
     background-color: var(--color-Yellow);
     color: var(--color-DarkGreen);
@@ -212,6 +219,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
+        height: auto;
 
     }
 
@@ -245,6 +253,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
+        height: auto;
 
     }
 
@@ -278,6 +287,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
+        height: auto;
 
     }
 

@@ -8,8 +8,11 @@ function RegisterPage() {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: ''
+    password: '',
+    confirmPassword: '' // Add confirmPassword field to state
   });
+
+  const [error, setError] = useState(''); // State for error message
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +24,13 @@ function RegisterPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Check if passwords match
+    if (formData.password !== formData.confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
     try {
       const response = await axios.post('http://your-api-endpoint.com/register/', formData);
       console.log(response.data); // Do something with the response if needed
@@ -43,7 +53,6 @@ function RegisterPage() {
           </div>
           <h3 className='RegisterPageTitle'>Create Your Account</h3>
           <p className='RegisterPageText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nihil rem. Tempora.</p>
-
         </div>
         <div className="RegisterPageRightSide">
           <form className="form" onSubmit={handleSubmit}>
@@ -55,8 +64,9 @@ function RegisterPage() {
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
             <label htmlFor="password" className="label">Password</label>
             <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
-            <label htmlFor="password-confirm" className="label">Confirm Password</label>
-            <input type="password" id="password-confirm" name="password-confirm" value={formData.password} onChange={handleChange} required className="input" />
+            <label htmlFor="confirmPassword" className="label">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} required className="input" />
+            {error && <p className="error">{error}</p>} {/* Display error message if passwords do not match */}
             <div className="passwordOptions">
               <Link to="" type="button" className="Register-form-forgetPassword">Forget Password</Link>
             </div>
