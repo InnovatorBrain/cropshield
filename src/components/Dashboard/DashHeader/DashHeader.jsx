@@ -1,10 +1,10 @@
 import React from 'react'
-import './DashNavbar.css'
+import './DashHeader.css'
 
 function DashNavbar() {
   return (
     <>
-    <div className="DashNavbar-container">
+    <div className="DashHeader-container">
 
     </div>
     </>

@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Dashboard Components
 import DashSidebar from './DashSidebar/DashSidebar';
-import DashNavbar from './DashNavbar/DashNavbar';
+import DashHeader from './DashHeader/DashHeader';
 import DashInsurance from './DashInsurance/DashInsurance';
 
 function DashboardLayout() {
@@ -14,7 +14,7 @@ function DashboardLayout() {
                 <DashSidebar />
             </div>
             <div className="dash-main-content">
-                <DashNavbar />
+                <DashHeader />
                 <Routes>
                     <Route path="/dashboard/insurance" element={<DashInsurance />} />
                 </Routes>

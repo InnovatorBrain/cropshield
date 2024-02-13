@@ -9,11 +9,11 @@ function DashSidebar() {
       <div className="DashSidebar-container">
         <div className="DashSidebar-LogoSection">
           <img src={images.NavbarLogo} alt="CropShield" className='DashSidebar-Logo' />
-          <h1 className='DashSidebar-LogoText'>Dashboard</h1>
+          <h1 className='DashSidebar-LogoText'>CropShield.</h1>
         </div>
 
         <div className="DashSidebar-ListDropdowns-section">
-          {/* The dropdowns will be on here */}
+          {/* Use Link to here */}
         </div>
       </div>
 
