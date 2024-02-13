@@ -2,15 +2,17 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// Components
+// _________COMPONENTS__________
 import SplashScreen from './components/SplashScreen/SplashScreen';
 import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
-import Footer from './components/Footer/Footer';
 import SubHeading from './components/SubHeading/SubHeading';
 import OfferLogo from './components/OfferLogo/OfferLogo';
 import GetInTouch from './components/GetInTouch/GetInTouch';
+import Footer from './components/Footer/Footer';
+// Register Page
 import RegisterPage from './components/RegisterPage/RegisterPage';
+// SignIn Page
 import SignInPage from './components/SignInPage/SignInPage';
 // Testing
 
@@ -43,6 +45,7 @@ function App() {
             <Route path="/Dashboard" element={<><div className='DASHBOARD'><Navbar /> <Footer /></div></>} />
             {/* Register */}
             <Route path="/Register" element={<><div className='Register'><RegisterPage /></div></>} />
+            {/* SignIn */}
             <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /></div></>} />
           </Routes>
         </BrowserRouter>

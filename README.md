@@ -11,4 +11,4 @@
 
 # FYP Crop-Shield 
 
-### This is a react application project for a Crop Insurance, contains @all components.
+This is a react application project for a Crop Insurance, contains @all components.

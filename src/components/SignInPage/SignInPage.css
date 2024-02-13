@@ -212,8 +212,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-        height: auto;
-
+        height: 100vh;
     }
 
     /* LEFTSIDE */
@@ -233,9 +232,12 @@
 
     /* RightSide */
     .RegisterPageRightSide {
-        margin: auto;
+        margin: 0 auto auto auto;
+        justify-content: center !important;
+        align-items: center;
         max-width: 100%;
         width: 100%;
+        
     }
 }
 
@@ -267,6 +269,8 @@
     /* RightSide */
     .RegisterPageRightSide {
         margin: auto;
+        justify-content: center !important;
+        align-items: center;
         max-width: 100%;
         width: 100%;
     }
@@ -301,6 +305,8 @@
     /* RightSide */
     .RegisterPageRightSide {
         margin: auto;
+        justify-content: center !important;
+        align-items: center;
         max-width: 100%;
         width: 100%;
     }

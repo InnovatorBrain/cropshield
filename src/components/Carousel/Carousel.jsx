@@ -34,9 +34,7 @@ function Carousel() {
                     </button>
                     {/* BUTTON ENDS HERE */}
 
-
                     {/* RIGHT_SIDE CONTAINER*/}
-
                 </div>
                 <div className="Carousel_Right_side">
                     <div className="Carousel_Video_Button">
