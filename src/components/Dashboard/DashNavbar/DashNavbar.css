@@ -1,0 +1,6 @@
+.DashNavbar-container {
+    height: 60px;
+    background-color: var(--color-asd2);
+    border-top: 3px solid var(--color-DarkGreen);
+
+}

@@ -1,0 +1,28 @@
+.dashboard-container {
+    display: flex;
+  }
+  
+  .DashSideBar-content {
+    flex: 1;
+  }
+  
+  .dash-main-content {
+    flex: 4; /* 80% width for main content */
+    position: relative; /* Relative position for absolute positioning of navbar */
+  }
+  
+  .dash-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    background-color: #9f5454; /* Navbar background color */
+    /* Add additional styling for the navbar */
+  }
+  
+  .dash-sidebar {
+    width: 20%;
+    background-color: #762323; /* Sidebar background color */
+    /* Add additional styling for the sidebar */
+  }
+  

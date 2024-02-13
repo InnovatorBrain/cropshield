@@ -1,0 +1,29 @@
+.DashSidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-asd1);
+    border-right: 3px solid var(--color-DarkGreen);
+    box-shadow: 25px black;
+}
+
+.DashSidebar-LogoSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.DashSidebar-Logo {
+    width: 70px;
+
+}
+
+.DashSidebar-LogoText {
+    font-size: 20px;
+    font-family: var(--font-base);
+    padding: 1rem;
+    color: var(--color-DarkGreen);
+}
