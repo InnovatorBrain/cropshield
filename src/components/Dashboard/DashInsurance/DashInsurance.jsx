@@ -1,10 +1,8 @@
 import React from 'react'
-
+import "./DashInsurance.css"
 function DashInsurance() {
   return (
-    <>
-    {/* <h1>Insurance</h1> */}
-    </>
+    <h1>Faizan</h1>
   )
 }
 

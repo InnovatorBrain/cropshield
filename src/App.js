@@ -48,7 +48,7 @@ function App() {
             {/* SignIn */}
             <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /></div></>} />
             {/* Dashboard */}
-            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
+            <Route path="/Dashboard/*" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
           </Routes>
         </BrowserRouter>
       )}

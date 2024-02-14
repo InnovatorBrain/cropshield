@@ -1,28 +1,99 @@
 .dashboard-container {
-    display: flex;
-  }
-  
+  display: flex;
+}
+
+.DashSideBar-content {
+  position: relative;
+  width: 20%;
+  transition: width 0.3s ease;
+}
+
+.sidebar-open {
+  width: 20%;
+}
+
+.sidebar-closed {
+  width: 0;
+}
+
+.dash-main-content {
+  flex: 1;
+  position: relative;
+}
+
+.dashSidebar-toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  /* Adjust left position as needed */
+  cursor: pointer;
+  z-index: 999;
+  /* Ensure it appears above other content */
+}
+
+.dashSidebar-toggle-button svg {
+  font-size: 24px;
+  /* Adjust size as needed */
+}
+
+/* Additional styling for the toggle button if necessary */
+
+
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
   .DashSideBar-content {
-    flex: 1;
-  }
-  
-  .dash-main-content {
-    flex: 4; /* 80% width for main content */
-    position: relative; /* Relative position for absolute positioning of navbar */
-  }
-  
-  .dash-navbar {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-    background-color: #9f5454; /* Navbar background color */
-    /* Add additional styling for the navbar */
+    width: 100%;
+    max-width: 100%;
+    transition: width 0.3s ease;
+    z-index: 8;
   }
-  
-  .dash-sidebar {
-    width: 20%;
-    background-color: #762323; /* Sidebar background color */
-    /* Add additional styling for the sidebar */
+
+  .sidebar-open {
+    width: 100%;
   }
-  
+
+  .sidebar-closed {
+    width: 0;
+  }
+
+  .dash-main-content {
+    flex: 1;
+    position: relative;
+  }
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .DashSideBar-content {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    transition: width 0.3s ease;
+    z-index: 8;
+  }
+
+  .sidebar-open {
+    width: 100%;
+  }
+
+  .sidebar-closed {
+    width: 0;
+  }
+
+  .dash-main-content {
+    flex: 1;
+    position: relative;
+  }
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}
