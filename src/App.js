@@ -16,7 +16,7 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 import SignInPage from './components/SignInPage/SignInPage';
 // Testing
 // USER-DASHBOARD
-import DashboardLayout from './components/Dashboard/index';
+import { DashboardLayout, DashboardLayoutInsurance } from './components/Dashboard/index';
 
 function App() {
   // SplashScreen
@@ -48,7 +48,8 @@ function App() {
             {/* SignIn */}
             <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /></div></>} />
             {/* Dashboard */}
-            <Route path="/Dashboard/*" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
+            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
+            <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
           </Routes>
         </BrowserRouter>
       )}

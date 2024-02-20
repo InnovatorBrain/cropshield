@@ -2,11 +2,13 @@
 .DashSidebar-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: var(--color-asd1);
-    border-right: 3px solid var(--color-DarkGreen);
+    min-height: 100vh;
+    max-height: auto;
+    background-color: var(--color-DarkGreen);
+    border-right: 3px solid var(--color-Yellow);
     box-shadow: 25px black;
     overflow-y: auto;
+
 }
 
 .DashSidebar-container::-webkit-scrollbar {
@@ -31,7 +33,7 @@
     font-size: 20px;
     font-family: var(--font-base);
     padding: 5px;
-    color: var(--color-DarkGreen);
+    color: var(--color-LightGreen_a);
 
 }
 
@@ -196,6 +198,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .dropdown-icon {

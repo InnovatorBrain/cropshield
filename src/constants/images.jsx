@@ -9,11 +9,18 @@ import OfferLogoFour from "../assets/OfferLogoIcons/4.png"
 import OfferLogoFive from "../assets/OfferLogoIcons/5.png"
 import OfferLogoSix from "../assets/OfferLogoIcons/6.png"
 
+//Dashboard-images-home
+import DashHomeBlockImage1 from '../assets/DashboardHome/noun-agriculture.png'
+import DashHomeBlockImage2 from '../assets/DashboardHome/noun-water.png'
+import DashHomeBlockImage3 from '../assets/DashboardHome/noun-weather.png'
 
 const images = {
     NavbarLogo, SlideImage,
     Offer: {
         OfferLogoTwo, OfferLogoThree, OfferLogoFour, OfferLogoFive, OfferLogoSix,
+    },
+    DashHomeBlock: {
+        DashHomeBlockImage1, DashHomeBlockImage2, DashHomeBlockImage3,
     }
 }
 export default images

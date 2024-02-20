@@ -19,12 +19,14 @@
 .dash-main-content {
   flex: 1;
   position: relative;
+  background-color: var(--color-asd2);;
 }
 
 .dashSidebar-toggle-button {
   position: absolute;
   top: 20px;
   left: 10px;
+  color: var(--color-LightGreen_a);
   /* Adjust left position as needed */
   cursor: pointer;
   z-index: 999;

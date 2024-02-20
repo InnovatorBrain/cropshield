@@ -1,0 +1,136 @@
+.DashHomeBlock-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--color-DarkGreen);
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.DashHomeBlock-container:hover {
+    transform: scale(1.04);
+}
+
+.DashHomeBlock-up-div {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: var(--font-Railway);
+    font-size: 20px;
+
+}
+
+.DashHomeBlock-down-div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DashHomeBlock-down-div-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px groove var(--color-asd1);
+    border-radius: 10px;
+    background-color: var(--color-Yellow);
+    margin-trim: 5px;
+}
+
+.DashHomeBlock-down-div-1:hover {
+    background-color: var(--color-LightGreen_a);
+}
+
+.DashHomeBlock-down-images-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--color-asd1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-asd2);
+}
+
+.DashHomeBlock-down-images {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.DashHomeBlock-down-percentage {
+    font-family: var(--font-base);
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.DashHomeBlock-down-simple-text {
+    font-family: var(--font-base);
+    font-size: 12px;
+
+}
+
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
+    .DashHomeBlock-container {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .DashHomeBlock-down-div {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .DashHomeBlock-down-div-1 {
+        margin: 1rem auto;
+    }
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .DashHomeBlock-container {
+        justify-content: center;
+        width: 85%;
+    }
+
+    .DashHomeBlock-down-div {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .DashHomeBlock-down-div-1 {
+        margin: 1rem auto;
+    }
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}

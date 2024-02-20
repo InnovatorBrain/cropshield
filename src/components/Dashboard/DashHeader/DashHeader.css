@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     height: 60px;
-    background-color: var(--color-asd2);
-    border-top: 3px solid var(--color-DarkGreen);
+    background-color: var(--color-asd1);
+    border-top: 3px solid var(--color-Yellow);
 }
 
 

@@ -28,7 +28,7 @@ function DashSidebar() {
               <span className='DashSidebar-Lists-buttons-span'><LuLayoutDashboard className='Dashsidebar-list-icons' />Dashboard</span>
             </button>
           </Link>
-          <Link to="/dashboard/Insurance" className='DashSidebar-ListDropdowns-Insurance'>
+          <Link to="/dashboard/insurance" className='DashSidebar-ListDropdowns-Insurance'>
             <div className="dropdown">
               <button className='DashSidebar-Lists-buttons'>
                 <span className='DashSidebar-Lists-buttons-span'><HiOutlineMenuAlt2 className='Dashsidebar-list-icons' />Insurance</span>

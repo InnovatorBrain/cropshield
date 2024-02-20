@@ -6,7 +6,8 @@ import "./RegisterPage.css";
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
-    username: '',
+    first_name: '',
+    last_name: '',
     email: '',
     password: '',
     confirmPassword: '' // Add confirmPassword field to state
@@ -58,8 +59,10 @@ function RegisterPage() {
           <form className="form" onSubmit={handleSubmit}>
             <span className="form-title">Register Now</span>
             <span className="form-title-text">Welcome back! Please enter your details</span>
-            <label htmlFor="username" className="label">Username</label>
-            <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required className="input" />
+            <label htmlFor="username" className="label">First Name</label>
+            <input type="text" id="username" name="username" value={formData.first_name} onChange={handleChange} required className="input" />
+            <label htmlFor="username" className="label">Last Name</label>
+            <input type="text" id="username" name="username" value={formData.last_name} onChange={handleChange} required className="input" />
             <label htmlFor="email" className="label">Email</label>
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
             <label htmlFor="password" className="label">Password</label>
