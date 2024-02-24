@@ -245,6 +245,8 @@ li:hover {
     max-width: 85%;
     margin: auto;
     padding: 10px 8rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .featured-products-title {
@@ -419,6 +421,7 @@ li:hover {
         max-width: 100%;
         margin: auto;
         padding: 10px 0;
+
     }
 
     .featured-products-title {

@@ -8,7 +8,7 @@ const Headings = (props) => {
             <div className="Headings-main-container">
                 <h className="Headings-title">{props.title}</h>
                 <p className="Headings-text">{props.text}</p>
-                <Link to="" className="Headings-link">{props.linkText}</Link> 
+                <Link to={props.link} className="Headings-link">{props.linkText}</Link> 
             </div>
         </>
     )

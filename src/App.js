@@ -58,6 +58,7 @@ function App() {
             {/* Dashboard */}
             <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
+            <Route path="*" element={<><div className='404Page'><Navbar/> <Headings title="Oops, we couldn't find that page." text="Sorry, it seems like you've wandered off the beaten path. Explore our mission elsewhere on our site, or navigate back to discover more about our initiatives and goals." link= "/Home" linkText="CropShield home page" /><Footer/></div></>} />
           </Routes>
         </BrowserRouter>
       )}
