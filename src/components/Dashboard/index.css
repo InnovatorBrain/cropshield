@@ -19,7 +19,8 @@
 .dash-main-content {
   flex: 1;
   position: relative;
-  background-color: var(--color-asd2);;
+  background-color: white;
+  /* background-color: var(--color-asd2); */
 }
 
 .dashSidebar-toggle-button {

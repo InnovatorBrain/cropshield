@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// Featured Products Icons
+import { SiHiveBlockchain } from "react-icons/si";
+import { RiNftFill } from "react-icons/ri";
+import { GiArtificialHive } from "react-icons/gi";
 import { FaFacebook, FaYoutube, FaInstagram, FaSpotify, FaTwitter } from 'react-icons/fa';
 
 import './Footer.css';
@@ -7,6 +11,15 @@ import './Footer.css';
 const Footer = () => {
   return (
     <>
+      {/* I am adding this section latter  now, So its css will be bottom of css file */}
+      <div className="featured-products-main">
+        <p className='featured-products-title'>Featured Services</p>
+        <p className="featured-products-p"><SiHiveBlockchain className='featured-products-p-icons' />BlockChain</p>
+        <p className="featured-products-p"> <RiNftFill className='featured-products-p-icons' />NFT</p>
+        <p className="featured-products-p"> <GiArtificialHive className='featured-products-p-icons' />Artificial Intelligence</p>
+
+      </div>
+
       <div className="Footer-main-container">
         <div className="Footer_Container">
           <div className="Footer_AboutUs_Section">

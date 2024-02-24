@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <li className='p-links'><Link to="/Contact">Contact</Link></li>
+          <li className='p-links'><Link to="/Help">Help & Support</Link></li>
 
         </ul>
         <div className='app__navbar-login' >
@@ -133,7 +133,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </li>
-                <li><Link to="/Contact" onClick={() => setToggleMenu(false)}>Contact</Link></li>
+                <li><Link to="/Help" onClick={() => setToggleMenu(false)}>Help & Support</Link></li>
                 <li id='app__login'>
                   <Link to="/Dashboard" className='p-links' onClick={() => setToggleMenu(false)} title='Dashboard'><IoPersonSharp size={20} /></Link>
                 </li>

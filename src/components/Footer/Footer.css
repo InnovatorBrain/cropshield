@@ -1,7 +1,7 @@
 .Footer-main-container {
     position: relative;
     z-index: 1 !important;
-    margin-top: 5rem;
+    margin-top: 0;
     background-color: #001e00;
     color: white !important;
     padding: .5rem 2rem 0 2rem;
@@ -237,7 +237,42 @@ li:hover {
     text-decoration: none;
 }
 
+/* featured-products */
+.featured-products-main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 85%;
+    margin: auto;
+    padding: 10px 8rem;
+}
 
+.featured-products-title {
+    font-family: var(--font-base);
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.featured-products-p {
+    font-family: var(--font-base);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.featured-products-p:hover {
+    opacity: 0.8;
+
+}
+
+.featured-products-p-icons {
+    font-size: 18px;
+    margin-right: 8px;
+}
 
 
 /* Extra small devices (phones) */
@@ -301,6 +336,36 @@ li:hover {
 
     }
 
+    /* featured-products */
+    .featured-products-main {
+        justify-content: space-around;
+        flex-direction: row;
+        max-width: 100%;
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    .featured-products-title {
+        font-family: var(--font-base);
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    .featured-products-p {
+        font-family: var(--font-base);
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .featured-products-p-icons {
+        font-size: 12px;
+        margin-right: 5px;
+    }
 
 
 }
@@ -345,6 +410,37 @@ li:hover {
         width: 100%;
         margin: 1rem auto;
 
+    }
+
+    /* featured-products */
+    .featured-products-main {
+        justify-content: space-around;
+        flex-direction: row;
+        max-width: 100%;
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    .featured-products-title {
+        font-family: var(--font-base);
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    .featured-products-p {
+        font-family: var(--font-base);
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .featured-products-p-icons {
+        font-size: 14px;
+        margin-right: 5px;
     }
 
 }

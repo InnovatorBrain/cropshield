@@ -1,0 +1,173 @@
+.AboutUs-container {
+    position: sticky;
+    margin: auto !important;
+    width: 100%;
+    height: 200px;
+
+}
+
+.AboutUsTop-image {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(20, 20, 20, 0.9);
+    /* Adjust the RGB values as needed */
+}
+
+
+.AboutUs-title {
+    margin: 2rem auto auto auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    font-size: 32px;
+    font-family: var(--font-base);
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the title perfectly */
+    z-index: 2;
+}
+
+.AboutUs-title-hr {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-Yellow);
+    margin-left: 10px;
+
+    border-radius: 5px;
+}
+
+/* .................................... */
+/* Bellow Support main Container starts */
+.Support-main-Container {
+    box-sizing: border-box;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+}
+
+.Support-left-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.Support-main-heading {
+    font-size: 28px;
+    font-family: var(--font-base);
+    color: var(--color-DarkGreen);
+    margin: 1rem auto 1rem 0;
+}
+
+.Support-left-container-p-links {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+
+.Support-left-p {
+    font-family: var(--font-base);
+    font-size: 14px;
+    max-width: 250px;
+    color: var(--color-DarkGreen);
+    margin: 10px;
+}
+
+.Support-left-link {
+    font-family: var(--font-base);
+    font-size: 20px;
+    color: var(--color-LightGreen_b);
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.Support-right-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.Support-right-p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 15px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Support-right-p-icons {
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
+    .AboutUs-title {
+        font-size: 22px;
+    }
+
+    .Support-main-Container {
+        margin: 3rem auto;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .Support-left-container {
+        max-width: 100%;
+    }
+
+    .Support-right-container {
+        max-width: 100%;
+    }
+
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .AboutUs-title {
+        font-size: 28px;
+    }
+
+    .Support-main-Container {
+        margin: 3rem auto;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .Support-left-container {
+        max-width: 100%;
+    }
+
+    .Support-right-container {
+        max-width: 100%;
+    }
+
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}
