@@ -14,6 +14,10 @@ import Footer from './components/Footer/Footer';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 // SignIn Page
 import SignInPage from './components/SignInPage/SignInPage';
+// AboutUs Page
+import HeaderBlock from './components/HeaderBlock/HeaderBlock';
+import Headings from './components/Headings/Headings';
+import AnimeCounter from './components/AnimeCounter/AnimeCounter';
 // Support Page
 import SupportHeader from './components/SupportHeader/SupportHeader';
 // Testing
@@ -44,7 +48,7 @@ function App() {
             <Route path="/home" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
               <OfferLogo /><GetInTouch /><Footer /></div></>} />
             {/* AboutUs */}
-            <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /> <Footer /></div></>} />
+            <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /><HeaderBlock /><Headings title="Explore Our Mission." text="From rural enthusiasts to seasoned agriculturists, and from local co-ops to global enterprises, our community leverages CropShield to enhance crop management, mitigate risks, and propel agricultural innovation." linkText="Learn more about our purpose" /><AnimeCounter /> <GetInTouch /><Footer /></div></>} />
             {/* Register */}
             <Route path="/Register" element={<><div className='Register'><RegisterPage /></div></>} />
             {/* Help & Support*/}
