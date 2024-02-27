@@ -19,10 +19,10 @@ function DashboardHomeHeader() {
 
         // Get current date and format it according to the user's locale
         const userLocale = navigator.language;
-        const options = { 
-            weekday: 'long', 
-            year: 'numeric', 
-            month: 'long', 
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
             day: 'numeric',
             timeZone: 'UTC' // Specify UTC to ensure accurate date representation
         };
@@ -34,7 +34,7 @@ function DashboardHomeHeader() {
         <div className="dashHomeHeader-container">
             <p className='dashHomeHeader-title'>Welcome Back, <span className='dashHomeHeader-username'>{username}</span>!</p>
             <div className='dashHomeHeader-bellow-div'>
-                <MdDateRange className='dashHomeHeader-date-icon'/>
+                <MdDateRange className='dashHomeHeader-date-icon' />
                 <span className='dashHomeHeader-date-text'>{currentDate}</span>
             </div>
         </div>
