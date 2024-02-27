@@ -9,6 +9,7 @@ import DashHeader from './DashHeader/DashHeader';
 // Dashboard Home Page
 import DashboardHomeHeader from './DashboardHomeHeader/DashboardHomeHeader';
 import DashHomeBlock from './DashHomeBlock/DashHomeBlock';
+import ProfileBlock from './ProfileBlock/ProfileBlock';
 
 import DashInsurance from './DashInsurance/DashInsurance';
 
@@ -27,11 +28,13 @@ function DashboardLayout() {
                 </div>
                 {isSidebarOpen && <DashSidebar />}
             </div>
-            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`} >
                 <DashHeader />
-                <DashboardHomeHeader />
-                < DashHomeBlock />
-
+                <div id="dash-main-content-id">
+                    <DashboardHomeHeader />
+                    < DashHomeBlock />
+                    <ProfileBlock />
+                </div>
             </div>
         </div>
     );

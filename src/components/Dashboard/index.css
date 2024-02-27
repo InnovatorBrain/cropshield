@@ -21,13 +21,26 @@
   position: relative;
   background-color: white;
   /* background-color: var(--color-asd2); */
+
+}
+
+#dash-main-content-id {
+  width: 100%;
+  display: flex !important;
+  justify-content: first baseline;
+  flex-wrap: wrap;
+  margin: auto;
+  vertical-align: middle;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .dashSidebar-toggle-button {
-  position: absolute;
+  position: fixed;
+  font-size: 25px;
+  font-weight: bold;
   top: 20px;
   left: 10px;
-  color: var(--color-LightGreen_a);
+  color: var(--color-LightGreen_b);
   /* Adjust left position as needed */
   cursor: pointer;
   z-index: 999;

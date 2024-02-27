@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Simulating a 2-second loading delay
+    }, 200); // Simulating a 2-second loading delay
   }, []);
 
   return (

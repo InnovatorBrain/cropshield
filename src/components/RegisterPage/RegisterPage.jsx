@@ -59,10 +59,10 @@ function RegisterPage() {
           <form className="form" onSubmit={handleSubmit}>
             <span className="form-title">Register Now</span>
             <span className="form-title-text">Welcome back! Please enter your details</span>
-            <label htmlFor="username" className="label">First Name</label>
-            <input type="text" id="username" name="username" value={formData.first_name} onChange={handleChange} required className="input" />
-            <label htmlFor="username" className="label">Last Name</label>
-            <input type="text" id="username" name="username" value={formData.last_name} onChange={handleChange} required className="input" />
+            <label htmlFor="first_name" className="label">First Name</label>
+            <input type="text" id="first_name" name="first_name" value={formData.first_name} onChange={handleChange} required className="input" />
+            <label htmlFor="last_name" className="label">Last Name</label>
+            <input type="text" id="last_name" name="last_name" value={formData.last_name} onChange={handleChange} required className="input" />
             <label htmlFor="email" className="label">Email</label>
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
             <label htmlFor="password" className="label">Password</label>

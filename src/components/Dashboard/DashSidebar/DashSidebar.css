@@ -1,10 +1,13 @@
 /* Style for the container */
 .DashSidebar-container {
+    position: fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-height: auto;
-    background-color: var(--color-DarkGreen);
+    width: 20%;
+    /* background-color: var(--color-DarkGreen); */
+    background-color: #f7faf7;
     border-right: 3px solid var(--color-Yellow);
     box-shadow: 25px black;
     overflow-y: auto;
@@ -49,7 +52,7 @@
 .DashSidebar-Lists-buttons {
     display: inline-block;
     border-radius: 4px;
-    background-color: var(--color-LightGreen_a);
+    background-color: var(--color-LightGreen_b);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -233,7 +236,6 @@
 }
 
 .DashSidebar-Lists-Logout:hover {
-    background-color: red;
     border: none;
 }
 
@@ -247,3 +249,54 @@
 .DashSidebar-Lists-span-logout:hover {
     color: white;
 }
+
+
+
+
+
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media only screen and (max-width: 575.98px) {
+    .DashSidebar-container {
+        width: 75%; 
+    }
+    .DashSidebar-Lists-buttons {
+        font-size: 14px;
+        padding: 10px;
+        width: 180px;
+        margin-bottom: 2px;
+    }
+}
+
+/* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .DashSidebar-container {
+        width: 50%; 
+    }
+    .DashSidebar-Lists-buttons {
+        font-size: 14px;
+        padding: 10px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Media query for screens between 768px and 991px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .DashSidebar-container {
+        width: auto; 
+       
+    }
+    .DashSidebar-Lists-buttons {
+        font-size: 14px;
+        padding: 10px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Media query for screens between 992px and 1199px (e.g., larger tablets and small laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Media query for screens 1200px and larger (e.g., desktops) */
+@media only screen and (min-width: 1200px) {}
