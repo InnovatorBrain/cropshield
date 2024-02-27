@@ -241,14 +241,12 @@
 
 .DashSidebar-Lists-span-logout {
     font-size: 14px;
-    font-family: var(--font-base);
+    font-family: var(--font-base) !important;
     color: var(--color-DarkGreen);
+    font-weight: 500 !important;
     margin: auto;
 }
 
-.DashSidebar-Lists-span-logout:hover {
-    color: white;
-}
 
 
 
