@@ -36,7 +36,7 @@ function DashSidebar() {
               <div className="dropdown-content-of-dashsidebar-lists">
                 {/* Dropdown content goes here */}
                 <Link to="/dashboard/apply-policy" className='dropdown-item'>Apply Policy</Link>
-                <Link to="/dashboard/All" className='dropdown-item'>Applied</Link>
+                <Link to="/dashboard/applied-policy" className='dropdown-item'>Applied</Link>
                 <Link to="/dashboard/All" className='dropdown-item'>Policy Categories</Link>
                 <Link to="/dashboard/Progress" className='dropdown-item'>Progress</Link>
                 {/* Add more dropdown items as needed */}

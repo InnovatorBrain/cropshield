@@ -1,0 +1,60 @@
+/* AppliedPolicy.css */
+.applied-policy-container {
+    max-width: 700px;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7faf7;
+    text-align: center; 
+}
+
+.applied-policy-container h5 {
+    font-size: 24px;
+    font-family: var(--font-base);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.policy-details {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.policy-details p {
+    margin: 10px 0;
+}
+
+.policy-details p span {
+    font-weight: bold;
+}
+
+.no-applied-policy-message {
+    margin-top: 50px; /* Add space between the message and the heading */
+}
+
+.apply-policy-link {
+    color: #007bff;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 12px 24px;
+    background-color: var(--color-DarkGreen);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--font-base);
+    font-size: 14px;
+}
+.navigation-buttons{
+    margin-top: 2rem !important;
+}
+
+.back-button:hover {
+    background-color: var(--color-Yellow);
+}

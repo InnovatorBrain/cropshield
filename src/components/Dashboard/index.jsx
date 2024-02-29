@@ -14,6 +14,7 @@ import ProfileBlock from './ProfileBlock/ProfileBlock';
 // Insurace Pages
 import DashInsurance from './DashInsurance/DashInsurance';
 import DashApplyPolicy from './DashApplyPolicy/DashApplyPolicy';
+import AppliedPolicy from './AppliedPolicy/AppliedPolicy'
 
 function DashboardLayout() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -82,11 +83,33 @@ function DashboardLayoutApplyPolicy() {
             </div>
             <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
                 <DashHeader />
-
                 <DashApplyPolicy />
             </div>
         </div>
     );
 }
+// -------------------APPLIED-POLICY--------------------
+function DashboardAppliedPolicy() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy };
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    return (
+        <div className="dashboard-container">
+            <div className={`DashSideBar-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+                <div className="dashSidebar-toggle-button" onClick={toggleSidebar}>
+                    <RxHamburgerMenu />
+                </div>
+                {isSidebarOpen && <DashSidebar />}
+            </div>
+            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+                <DashHeader />
+                <AppliedPolicy />
+            </div>
+        </div>
+    );
+}
+
+export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy };

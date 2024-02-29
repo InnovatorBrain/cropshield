@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './DashApplyPolicy.css';
 import DashPageTitleDiv from '../DashPageTitleDiv/DashPageTitleDiv';
+import axios from 'axios';
 
 const DashApplyPolicy = () => {
     const [formData, setFormData] = useState({
@@ -20,20 +21,21 @@ const DashApplyPolicy = () => {
         agreeTerms: false,
     });
 
-    // Fetch user profile data on component mount
     useEffect(() => {
         const fetchUserProfile = async () => {
-            // Replace with your logic to fetch user profile data after login
-            const userProfile = await fetch('/api/user/profile');
-            const profileData = await userProfile.json();
-            setFormData({
-                farmerName: profileData.name,
-                emailAddress: profileData.email,
-                // ... set other profile data as needed
-            });
+            try {
+                const response = await axios.get('http://127.0.0.1:8000/auth/profile/');
+                const profileData = response.data;
+                setFormData({
+                    farmerName: profileData.name,
+                    emailAddress: profileData.email,
+                });
+            } catch (error) {
+                console.error('Error fetching user profile:', error);
+            }
         };
         fetchUserProfile();
-    }, []); // Empty dependency array ensures useEffect runs only once on mount
+    }, []);
 
     const handleChange = (event) => {
         if (event.target.name === 'farmLocation') {
@@ -55,11 +57,15 @@ const DashApplyPolicy = () => {
                 [event.target.name]: event.target.value,
             });
         }
-
     };
 
     const handleFileChange = (event) => {
-        const file = event.target.files[0];
+        const file = event.target.files && event.target.files[0];
+        if (!file) {
+            // No file selected, handle accordingly
+            console.error('No file selected');
+            return;
+        }
         // Implement file validation (size, type, etc.) here
         if (file.size > 1024 * 1024 * 5) { // 5 MB limit
             alert('File size too large, maximum 5 MB allowed!');
@@ -70,13 +76,40 @@ const DashApplyPolicy = () => {
             [event.target.name]: file,
         });
     };
+    
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.post('YOUR_API_ENDPOINT', formData);
+            console.log('Form submitted successfully:', response.data);
+            // Reset form fields after successful submission if needed
+            setFormData({
+                farmerName: '',
+                farmerCNIC: '',
+                contactNumber: '',
+                emailAddress: '',
+                farmAddress: '',
+                farmSize: '',
+                farmLocation: {
+                    latitude: '',
+                    longitude: '',
+                },
+                policyId: '',
+                cnicPicture: null,
+                formEvidence: null,
+                agreeTerms: false,
+            });
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
+    };
+
     return (
         <>
             <div className="ApplyPolicy-main-container">
                 <DashPageTitleDiv title="Apply Policy" />
-
-                {/* Forms start from here */}
-                <form className="apply-policy-form" onSubmit={(e) => e.preventDefault()}>
+                <form className="apply-policy-form" onSubmit={handleSubmit}>
                     <div className="form-group farmer-info">
                         <p className='apply-policy-form-section-headings'>Farmer Information</p>
                         <label htmlFor="farmerName">Farmer Name <span>*</span></label>
@@ -166,7 +199,6 @@ const DashApplyPolicy = () => {
                             {/* ... */}
                         </select>
                     </div>
-
                     <div className="form-group document-uploads">
                         <p className='apply-policy-form-section-headings'>Document Uploads</p>
                         <label htmlFor="cnicPicture">CNIC Picture:<span>*</span></label>
@@ -186,7 +218,6 @@ const DashApplyPolicy = () => {
                             onChange={handleFileChange}
                         />
                     </div>
-
                     <div className="form-group terms-and-conditions" >
                         <p className='apply-policy-form-section-headings'>Terms and Conditions <span>*</span></p>
                         <div id="apply-policy-checkbox" className="apply-policy-checkbox">
@@ -200,10 +231,7 @@ const DashApplyPolicy = () => {
                                 I agree to the terms and conditions
                             </label>
                         </div>
-
-
                     </div>
-
                     <button type="submit">Apply</button>
                 </form>
             </div>

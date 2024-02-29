@@ -22,7 +22,7 @@ import AnimeCounter from './components/AnimeCounter/AnimeCounter';
 import SupportHeader from './components/SupportHeader/SupportHeader';
 // Testing
 // USER-DASHBOARD
-import { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy } from './components/Dashboard/index';
+import { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy } from './components/Dashboard/index';
 
 function App() {
   // SplashScreen
@@ -59,6 +59,7 @@ function App() {
             <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
             <Route path="/Dashboard/apply-policy" element={<><div className='DASHBOARD'> <DashboardLayoutApplyPolicy /></div></>} />
+            <Route path="/Dashboard/applied-policy" element={<><div className='DASHBOARD'> <DashboardAppliedPolicy /></div></>} />
 
             <Route path="*" element={<><div className='404Page'><Navbar /> <Headings title="Oops, we couldn't find that page." text="Sorry, it seems like you've wandered off the beaten path. Explore our mission elsewhere on our site, or navigate back to discover more about our initiatives and goals." link="/Home" linkText="CropShield home page" /><Footer /></div></>} />
           </Routes>
