@@ -162,6 +162,7 @@ const DashApplyPolicy = () => {
                         <select name="policyId" id="policyId" value={formData.policyId} onChange={handleChange} required>
                             {/* Add options for available policies here */}
                             <option value="">Select a Policy</option>
+                            <option value="wheate">wheate</option>
                             {/* ... */}
                         </select>
                     </div>
@@ -176,7 +177,7 @@ const DashApplyPolicy = () => {
                             accept="image/*"
                             onChange={handleFileChange}
                         />
-                        <label htmlFor="formEvidence">Form Evidence:<span>*</span></label>
+                        <label htmlFor="formEvidence">Form Evidence:<span>*</span> (e.g, .pdf,.doc,.docx)</label>
                         <input
                             type="file"
                             name="formEvidence"

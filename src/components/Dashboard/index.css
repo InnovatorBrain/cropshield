@@ -36,7 +36,7 @@
 
 .dashSidebar-toggle-button {
   position: fixed;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   top: 20px;
   left: 10px;
@@ -44,6 +44,7 @@
   /* Adjust left position as needed */
   cursor: pointer;
   z-index: 999;
+  
   /* Ensure it appears above other content */
 }
 
