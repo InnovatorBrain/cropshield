@@ -1,5 +1,6 @@
 .dashboard-container {
   display: flex;
+  background-color: var(--color-Grey);
 }
 
 .DashSideBar-content {
@@ -42,9 +43,9 @@
   position: fixed;
   font-size: 30px;
   font-weight: bold;
-  top: 20px;
+  top: 25px;
   left: 10px;
-  color: var(--color-LightGreen_b);
+  color: white;
   /* Adjust left position as needed */
   cursor: pointer;
   z-index: 999;
