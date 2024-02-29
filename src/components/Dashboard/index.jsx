@@ -11,7 +11,9 @@ import DashboardHomeHeader from './DashboardHomeHeader/DashboardHomeHeader';
 import DashHomeBlock from './DashHomeBlock/DashHomeBlock';
 import ProfileBlock from './ProfileBlock/ProfileBlock';
 
+// Insurace Pages
 import DashInsurance from './DashInsurance/DashInsurance';
+import DashApplyPolicy from './DashApplyPolicy/DashApplyPolicy';
 
 function DashboardLayout() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -62,4 +64,29 @@ function DashboardLayoutInsurance() {
     );
 }
 
-export { DashboardLayout, DashboardLayoutInsurance };
+// -------------------APPLY-POLICY--------------------
+function DashboardLayoutApplyPolicy() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    return (
+        <div className="dashboard-container">
+            <div className={`DashSideBar-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+                <div className="dashSidebar-toggle-button" onClick={toggleSidebar}>
+                    <RxHamburgerMenu />
+                </div>
+                {isSidebarOpen && <DashSidebar />}
+            </div>
+            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+                <DashHeader />
+
+                <DashApplyPolicy />
+            </div>
+        </div>
+    );
+}
+
+export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy };

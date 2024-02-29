@@ -28,15 +28,14 @@ function DashSidebar() {
               <span className='DashSidebar-Lists-buttons-span'><LuLayoutDashboard className='Dashsidebar-list-icons' />Dashboard</span>
             </button>
           </Link>
-          <Link to="/dashboard/insurance" className='DashSidebar-ListDropdowns-Insurance'>
+          <Link to="" className='DashSidebar-ListDropdowns-Insurance'>
             <div className="dropdown">
               <button className='DashSidebar-Lists-buttons'>
                 <span className='DashSidebar-Lists-buttons-span'><HiOutlineMenuAlt2 className='Dashsidebar-list-icons' />Insurance</span>
               </button>
               <div className="dropdown-content-of-dashsidebar-lists">
                 {/* Dropdown content goes here */}
-                <Link to="/dashboard/All" className='dropdown-item'>Apply Policy</Link>
-                <Link to="/dashboard/All" className='dropdown-item'>Available Policy</Link>
+                <Link to="/dashboard/apply-policy" className='dropdown-item'>Apply Policy</Link>
                 <Link to="/dashboard/All" className='dropdown-item'>Applied</Link>
                 <Link to="/dashboard/All" className='dropdown-item'>Policy Categories</Link>
                 <Link to="/dashboard/Progress" className='dropdown-item'>Progress</Link>

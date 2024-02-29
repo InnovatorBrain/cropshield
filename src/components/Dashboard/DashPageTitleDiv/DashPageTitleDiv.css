@@ -1,0 +1,32 @@
+.DashTitle-main-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px 1rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+
+.DashTitle-title {
+    font-family: var(--font-base);
+    font-size: 16px;
+    align-items: center;
+}
+
+.DashTitle-page-icon {
+    font-size: 20px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    color: var(--color-LightGreen_b);
+}
+
+.DashTitle-pannel-option {
+    font-family: var(--font-base);
+    font-size: 14px;
+    text-decoration: underline;
+}

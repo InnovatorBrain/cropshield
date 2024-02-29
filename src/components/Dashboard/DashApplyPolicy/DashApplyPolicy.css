@@ -1,0 +1,162 @@
+.ApplyPolicy-main-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.apply-policy-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Vertical spacing between sections */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 4px;
+    /* Rounded corners */
+    width: 100%;
+    /* Fill available width */
+    max-width: 700px;
+    /* Set a maximum width */
+    margin: 2rem auto;
+    /* Center the form horizontally */
+    background-color: #fff;
+    /* White background */
+}
+
+.apply-policy-form-section-headings {
+    font-family: var(--font-base);
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    opacity: 0.85;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Small spacing between elements within each section */
+}
+
+.form-group h3 {
+    font-size: 1.2rem;
+    /* Slightly larger heading for each section */
+    margin-bottom: 0.5rem;
+    /* Small space below the heading */
+}
+
+label {
+    font-family: var(--font-base);
+    font-size: 14px;
+}
+
+input,
+textarea,
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    /* Light gray border for input elements */
+    border-radius: 4px;
+    /* Rounded corners for input elements */
+    width: 100%;
+}
+
+textarea {
+    min-height: 100px;
+    /* Set a minimum height for textarea */
+}
+
+select {
+    appearance: none;
+    /* Remove default select styles */
+    padding-right: 1rem;
+    /* Add space for the dropdown arrow */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCbG9jay0="), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCbG9jay0=");
+    /* Add dropdown arrow icons (replace with your desired icons) */
+    background-repeat: no-repeat, no-repeat;
+    /* Position the icons */
+    background-position: right 0.5rem center, 100% center;
+    /* Position the icons */
+}
+
+select:focus {
+    outline: none;
+    /* Remove focus outline */
+    border-color: #999;
+    /* Change border color on focus */
+}
+#apply-policy-checkbox {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    text-align: left; /* Align text to the left */
+}
+
+.apply-policy-checkbox {
+    margin: 1rem auto auto 0;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-right: 8px; /* Add some space between checkbox and label */
+    font-size: 14px; /* Adjust font size */
+    line-height: 20px; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.checked {
+    background-color: #000;
+    color: #fff;
+}
+
+.applypolicycheckboxlabel {
+    margin-left: 8px; /* Add some space between checkbox and label */
+}
+
+
+button[type="submit"] {
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    background-color: var(--color-DarkGreen);
+    /* Green color for submit button */
+    color: white;
+    /* White text color for submit button */
+    padding: 1rem;
+    border: none;
+    /* Remove border for submit button */
+    border-radius: 4px;
+    /* Rounded corners for submit button */
+    cursor: pointer;
+    /* Indicate that the button is clickable */
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-Yellow);
+    /* Darker green on hover for submit button */
+}
+.location-inputs input{
+    margin-bottom: 10px;
+}
+
+/* Apply this class to the containing div for general styling */
+.document-uploads {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Spacing between fields */
+}
+
+/* Style for file input fields */
+.document-uploads input[type="file"] {
+    /* Customize as needed */
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
