@@ -5,7 +5,9 @@
     margin: auto;
     padding: 8px 1rem;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--color-Grey);
+    color: white;
 
 }
 
@@ -17,12 +19,12 @@
 }
 
 .DashTitle-page-icon {
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 8px;
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
-    color: var(--color-LightGreen_b);
+    color: var(--color-Yellow);
 }
 
 .DashTitle-pannel-option {

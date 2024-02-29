@@ -9,7 +9,7 @@
     gap: 2rem;
     /* Vertical spacing between sections */
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     /* Light gray border */
     border-radius: 4px;
     /* Rounded corners */
@@ -137,6 +137,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-Yellow);
+    color: rgb(0, 0, 0, 1);
     /* Darker green on hover for submit button */
 }
 .location-inputs input{

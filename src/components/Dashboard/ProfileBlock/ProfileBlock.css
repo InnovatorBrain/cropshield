@@ -4,10 +4,10 @@
     align-items: flex-start;
     margin: 1rem auto;
     max-width: 30%;
-    border: 1px solid rgb(137, 137, 137);
+    border: 2px solid rgb(255, 255, 255, 0.8);
     border-radius: 8px;
     padding: 1rem;
-    background-color: #f7faf7;
+    background-color: white;
 }
 
 .profileBlock-container {
@@ -38,12 +38,22 @@
 .profileBlock-text-username {
     font-size: 22px;
     font-family: var(--font-base);
+    color: var(--color-DarkGreen);
     margin: 1rem auto;
+}
+.profileBlockButton{
+    background-color: var(--color-DarkGreen);
+    color: white;
+}
+.profileBlockButton:hover{
+    background-color: var(--color-Yellow);
+    color: var(--color-DarkGreen);
 }
 
 .profileBlock-email-container {
     border-top: 1px solid gray;
     margin: 1rem auto;
+    color: var(--color-DarkGreen);
 }
 
 .profileBlock-text {
@@ -59,7 +69,7 @@
     text-decoration: underline;
     font-weight: 600;
     color: #1473e6;
-    ;
+    
 }
 
 

@@ -15,6 +15,7 @@ import ProfileBlock from './ProfileBlock/ProfileBlock';
 import DashInsurance from './DashInsurance/DashInsurance';
 import DashApplyPolicy from './DashApplyPolicy/DashApplyPolicy';
 import AppliedPolicy from './AppliedPolicy/AppliedPolicy'
+import PolicyProgress from "./PolicyProgress/PolicyProgress";
 
 function DashboardLayout() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -111,5 +112,29 @@ function DashboardAppliedPolicy() {
         </div>
     );
 }
+// -------------------PROGRESS--------------------
+function DashboardProgress() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy };
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    return (
+        <div className="dashboard-container">
+            <div className={`DashSideBar-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+                <div className="dashSidebar-toggle-button" onClick={toggleSidebar}>
+                    <RxHamburgerMenu />
+                </div>
+                {isSidebarOpen && <DashSidebar />}
+            </div>
+            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+                <DashHeader />
+                <PolicyProgress/>
+                
+            </div>
+        </div>
+    );
+}
+
+export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy, DashboardProgress };

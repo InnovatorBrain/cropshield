@@ -8,18 +8,16 @@
     height: 20%;
     /* border-radius: 8px; */
     /* border: 1px solid gray; */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: transform 0.2s ease-in-out;
 
 }
 
-.dashHomeHeader-container:hover {
-    transform: scale(1.005);
-}
 
 .dashHomeHeader-title {
     font-size: 35px;
     font-family: var(--font-base);
+    color: white;
 
 }
 
@@ -37,11 +35,13 @@
 .dashHomeHeader-date-icon {
     font-size: 20px;
     margin-right: .5rem;
+    color: white;
 }
 
 .dashHomeHeader-date-text {
     font-family: var(--font-base);
     font-size: 14px;
+    color: white;
 
 }
 
@@ -53,7 +53,6 @@
     .dashHomeHeader-container {
         justify-content: center;
         margin: 1rem auto 1rem 1rem;
-        background-color: white;
         max-width: 95%;
     }
 

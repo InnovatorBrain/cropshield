@@ -37,7 +37,7 @@ const ProfileBlock = () => {
                 </div>
                 <div className="profileBlock-text-container">
                     <h1 className='profileBlock-text-username'>{userData.name}</h1>
-                    <button>Edit Profile</button>
+                    <button className='profileBlockButton'>Edit Profile</button>
                 </div>
                 <div className="profileBlock-email-container">
                     <p className="profileBlock-text">{userData.email}</p>

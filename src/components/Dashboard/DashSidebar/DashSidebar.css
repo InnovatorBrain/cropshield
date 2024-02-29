@@ -7,7 +7,7 @@
     max-height: auto;
     width: 20%;
     /* background-color: var(--color-DarkGreen); */
-    background-color: #f7faf7;
+    background-color: var(--color-footer);
     border-right: 3px solid var(--color-Yellow);
     box-shadow: 25px black;
     overflow-y: auto;
@@ -36,7 +36,7 @@
     font-size: 20px;
     font-family: var(--font-base);
     padding: 5px;
-    color: var(--color-LightGreen_a);
+    color: var(--color-Yellow);
 
 }
 
@@ -52,9 +52,9 @@
 .DashSidebar-Lists-buttons {
     display: inline-block;
     border-radius: 4px;
-    background-color: var(--color-LightGreen_b);
+    background-color: var(--color-footer);
     border: none;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-size: 17px;
     padding: 10px;
@@ -63,17 +63,24 @@
     cursor: pointer;
     margin-bottom: 15px;
 }
+.DashSidebar-Lists-buttons:hover {
+    color: black;
+    background-color: white;
+    
+}
 
 .DashSidebar-Lists-buttons .Dashsidebar-list-icons {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--color-Yellow);
+    font-weight: bold;
 
 }
 
 .Dashsidebar-list-icons {
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .DashSidebar-Lists-buttons span {
@@ -95,11 +102,13 @@
 
 .DashSidebar-Lists-buttons:hover span {
     padding-right: 15px;
+    
 }
 
 .DashSidebar-Lists-buttons:hover span:after {
     opacity: 1;
     right: 0;
+    
 }
 
 
@@ -187,8 +196,8 @@
 }
 
 .dropdown-content-of-dashsidebar-lists a:hover {
-    background-color: var(--color-LightGreen_a);
-    color: white;
+    background-color: var(--color-Yellow);
+    color: black;
 
 }
 

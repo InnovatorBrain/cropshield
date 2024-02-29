@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     height: 75px;
-    background-color: var(--color-asd1);
+    background-color: var(--color-footer);
     border-top: 3px solid var(--color-Yellow);
-    background-color: white;
+    color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     /* background-color: rgba(247, 247, 247, 0.95); */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -16,16 +16,15 @@
     margin-top: 20px;
     margin-left: 3rem;
     margin-bottom: 20px;
-
 }
 
 .DashHeader-Register-page-homeIcon {
-    color: var(--color-DarkGreen);
+    color: var(--color-Yellow);
     font-size: 18px;
 }
 
 .DashHeader-breadcrumb>span {
-    color: var(--color-DarkGreen);
+    color: white;
     font-family: var(--font-accent);
     font-size: 18px;
 }
@@ -75,14 +74,14 @@
     max-width: 190px;
     height: 40px;
     margin: auto;
-    background-color: white;
-    color: var(--color-DarkGreen);
+    background-color: var(--color-Grey);
+    color: white;
     padding: .15rem .5rem;
     min-height: 40px;
     border-radius: 4px;
     outline: none;
     border: 1px;
-    border-style:inset;
+    border-style: inset;
     border-color: var(--color-DarkGreen);
     line-height: 1.15;
     box-shadow: 0px 10px 20px -18px;

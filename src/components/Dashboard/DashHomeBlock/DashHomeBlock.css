@@ -11,6 +11,7 @@
     margin-left: 3rem;
     padding: 1rem;
     transition: transform 0.2s ease-in-out;
+    border: 1px solid rgb(255, 255, 255, 0.5);
 
 }
 
@@ -92,7 +93,7 @@
 @media only screen and (max-width: 575.98px) {
     .DashHomeBlock-container {
         justify-content: center;
-        width: 90%;
+        width: 80%;
         margin: auto !important;
     }
 
