@@ -48,8 +48,9 @@
 
 .DashHeader-notification-id {
     font-size: 22px;
-    margin-right: 1.5rem;
-    color: black;
+    margin-right: 1rem;
+    color: var(--color-icon);
+    font-weight: bold;
 }
 
 .DashHeader-user-img {

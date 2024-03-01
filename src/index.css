@@ -15,14 +15,15 @@
   --color-LightGreen_a: #81b221;
   --color-LightGreen_b: #6a9930;
   --color-DarkGreen: #0F2E0F;
-  --color-footer:#001e00;
+  --color-footer: #001e00;
   --color-Yellow: #f3c22b;
   --color-YellowLight: #cfef00;
   --color-Grey: #011205;
 
-/* Dashboard */
---color-asd1: #f7faf7;
---color-asd2: #f1f8f5;
+  /* Dashboard */
+  --color-asd1: #f7faf7;
+  --color-asd2: #f1f8f5;
+  --color-icon: #108a00;
 
 }
 

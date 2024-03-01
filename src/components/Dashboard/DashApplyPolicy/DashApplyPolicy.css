@@ -25,9 +25,9 @@
 
 .apply-policy-form-section-headings {
     font-family: var(--font-base);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
-    color: black;
+    color: var(--color-DarkGreen);
     opacity: 0.85;
 
 }
@@ -40,21 +40,19 @@
 }
 
 .form-group h3 {
-    font-size: 1.2rem;
-    /* Slightly larger heading for each section */
     margin-bottom: 0.5rem;
-    /* Small space below the heading */
 }
 
 label {
     font-family: var(--font-base);
+    font-weight: 500;
     font-size: 14px;
 }
 
 input,
 textarea,
 select {
-    padding: 0.5rem;
+    padding: 10px !important;
     border: 1px solid #ccc;
     /* Light gray border for input elements */
     border-radius: 4px;

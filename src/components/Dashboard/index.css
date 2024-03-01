@@ -40,9 +40,9 @@
   position: fixed;
   font-size: 30px;
   font-weight: bold;
-  top: 25px;
+  top: 22px;
   left: 10px;
-  color: white;
+  color: black;
   /* Adjust left position as needed */
   cursor: pointer;
   z-index: 999;
