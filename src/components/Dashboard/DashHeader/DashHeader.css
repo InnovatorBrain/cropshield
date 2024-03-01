@@ -2,12 +2,10 @@
     display: flex;
     justify-content: space-between;
     height: 75px;
-    background-color: var(--color-footer);
+    background-color: var(--color-asd1);
     border-top: 3px solid var(--color-Yellow);
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    /* background-color: rgba(247, 247, 247, 0.95); */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
@@ -24,9 +22,10 @@
 }
 
 .DashHeader-breadcrumb>span {
-    color: white;
+    color: black;
     font-family: var(--font-accent);
     font-size: 18px;
+    font-weight: 500;
 }
 
 /* breadcrumb end*/
@@ -49,7 +48,8 @@
 
 .DashHeader-notification-id {
     font-size: 22px;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
+    color: black;
 }
 
 .DashHeader-user-img {
@@ -63,6 +63,7 @@
 .DashHeader-user-img-span {
     font-size: 14px;
     font-family: var(--font-base);
+    color: black;
     margin: auto;
     padding: 8px;
     justify-content: center;
@@ -74,8 +75,8 @@
     max-width: 190px;
     height: 40px;
     margin: auto;
-    background-color: var(--color-Grey);
-    color: white;
+    background-color: white;
+    color: black;
     padding: .15rem .5rem;
     min-height: 40px;
     border-radius: 4px;

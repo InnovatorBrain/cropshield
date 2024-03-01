@@ -1,6 +1,5 @@
 .dashboard-container {
   display: flex;
-  background-color: var(--color-Grey);
 }
 
 .DashSideBar-content {
@@ -21,10 +20,8 @@
   flex: 1;
   position: relative;
   background-color: white;
-  /* background-color: var(--color-asd2); */
   min-height: 100vh;
   height: auto;
-  background-color: var(--color-Grey);
 
 }
 
@@ -36,7 +33,7 @@
   margin: auto;
   vertical-align: middle;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  background-color: var(--color-Grey);
+  background-color: white;
 }
 
 .dashSidebar-toggle-button {

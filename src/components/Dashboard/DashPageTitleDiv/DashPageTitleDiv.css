@@ -5,9 +5,9 @@
     margin: auto;
     padding: 8px 1rem;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: var(--color-Grey);
-    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: black;
 
 }
 

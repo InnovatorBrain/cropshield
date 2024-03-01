@@ -6,23 +6,23 @@
     padding: 1rem 2rem;
     width: 100%;
     height: 20%;
-    /* border-radius: 8px; */
-    /* border: 1px solid gray; */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
+    background-color: white;
 
 }
 
 
 .dashHomeHeader-title {
-    font-size: 35px;
+    font-size: 30px;
     font-family: var(--font-base);
-    color: white;
+    color: black;
 
 }
 
 .dashHomeHeader-username {
     font-weight: bold;
+    color: black;
 }
 
 .dashHomeHeader-bellow-div {
@@ -35,13 +35,13 @@
 .dashHomeHeader-date-icon {
     font-size: 20px;
     margin-right: .5rem;
-    color: white;
+    color: black;
 }
 
 .dashHomeHeader-date-text {
     font-family: var(--font-base);
     font-size: 14px;
-    color: white;
+    color: black;
 
 }
 

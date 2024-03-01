@@ -4,14 +4,14 @@
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 8px;
-    background-color: var(--color-DarkGreen);
+    background-color: var(--color-asd1);
     width: 60%;
     height: 40%;
     margin-top: 1rem !important;
     margin-left: 3rem;
     padding: 1rem;
     transition: transform 0.2s ease-in-out;
-    border: 1px solid rgb(255, 255, 255, 0.7);
+    border: 1px solid rgb(0, 0, 0, 0.3);
 
 }
 
@@ -28,7 +28,7 @@
     color: white;
     font-family: var(--font-base);
     font-weight: 600;
-    color: var(--color-Yellow);
+    color: var(--color-DarkGreen);
     font-size: 24px;
 
 }

@@ -6,8 +6,7 @@
     min-height: 100vh;
     max-height: auto;
     width: 20%;
-    /* background-color: var(--color-DarkGreen); */
-    background-color: var(--color-footer);
+    background-color: var(--color-asd1);
     border-right: 3px solid var(--color-Yellow);
     box-shadow: 25px black;
     overflow-y: auto;
@@ -36,7 +35,8 @@
     font-size: 20px;
     font-family: var(--font-base);
     padding: 5px;
-    color: var(--color-Yellow);
+    font-weight: 700;
+    color: var(--color-DarkGreen);
 
 }
 
@@ -63,10 +63,11 @@
     cursor: pointer;
     margin-bottom: 15px;
 }
+
 .DashSidebar-Lists-buttons:hover {
     color: black;
     background-color: white;
-    
+
 }
 
 .DashSidebar-Lists-buttons .Dashsidebar-list-icons {
@@ -102,13 +103,13 @@
 
 .DashSidebar-Lists-buttons:hover span {
     padding-right: 15px;
-    
+
 }
 
 .DashSidebar-Lists-buttons:hover span:after {
     opacity: 1;
     right: 0;
-    
+
 }
 
 
@@ -210,7 +211,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
 .dropdown-icon {
@@ -234,10 +235,10 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--color-Yellow);
+    background-color: var(--color-footer);
     width: 75px;
     height: 35px;
-    border: 1px solid var(--color-DarkGreen);
+    border: 1px solid rgb(255, 255, 255, 0.7);
     border-radius: 5px;
     text-align: center;
     line-height: 35px;
@@ -246,14 +247,18 @@
 
 .DashSidebar-Lists-Logout:hover {
     border: none;
+    background-color: var(--color-Yellow);
 }
 
 .DashSidebar-Lists-span-logout {
     font-size: 14px;
     font-family: var(--font-base) !important;
-    color: var(--color-DarkGreen);
+    color: white;
     font-weight: 500 !important;
     margin: auto;
+}
+.DashSidebar-Lists-span-logout:hover {
+    color: black;
 }
 
 
@@ -265,8 +270,9 @@
 /* Media query for screens smaller than 576px (e.g., smartphones) */
 @media only screen and (max-width: 575.98px) {
     .DashSidebar-container {
-        width: 75%; 
+        width: 75%;
     }
+
     .DashSidebar-Lists-buttons {
         font-size: 14px;
         padding: 10px;
@@ -278,8 +284,9 @@
 /* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
     .DashSidebar-container {
-        width: 50%; 
+        width: 50%;
     }
+
     .DashSidebar-Lists-buttons {
         font-size: 14px;
         padding: 10px;
@@ -291,9 +298,10 @@
 /* Media query for screens between 768px and 991px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .DashSidebar-container {
-        width: auto; 
-       
+        width: auto;
+
     }
+
     .DashSidebar-Lists-buttons {
         font-size: 14px;
         padding: 10px;
