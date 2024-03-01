@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cropshield/static/css/main.4a78736f.css",
+    "main.js": "/cropshield/static/js/main.3ddb23dd.js",
+    "static/media/slideImage.jpg": "/cropshield/static/media/slideImage.224d3f5567696ab37e03.jpg",
+    "static/media/Grain1.jpeg": "/cropshield/static/media/Grain1.472ee18aa414e9aa03d9.jpeg",
+    "static/media/supportOne.jpg": "/cropshield/static/media/supportOne.159eed3802e11231121c.jpg",
+    "static/media/noun-weather.png": "/cropshield/static/media/noun-weather.ce8475c24d3766482280.png",
+    "static/media/Navbar-Logo.png": "/cropshield/static/media/Navbar-Logo.1fcc2476a7b5f07b5ab3.png",
+    "static/media/clearmouse.mp3": "/cropshield/static/media/clearmouse.4948e72707f75a4e998a.mp3",
+    "static/media/noun-agriculture.png": "/cropshield/static/media/noun-agriculture.062f32311ef09025114d.png",
+    "static/media/noun-water.png": "/cropshield/static/media/noun-water.9c923f9c5d414c4c32ba.png",
+    "index.html": "/cropshield/index.html",
+    "main.4a78736f.css.map": "/cropshield/static/css/main.4a78736f.css.map",
+    "main.3ddb23dd.js.map": "/cropshield/static/js/main.3ddb23dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a78736f.css",
+    "static/js/main.3ddb23dd.js"
+  ]
+}
