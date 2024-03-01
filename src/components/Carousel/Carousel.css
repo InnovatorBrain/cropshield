@@ -31,7 +31,7 @@
     font-family: var(--font-base);
     font-weight: bold;
     color: white;
-    text-align: center;
+    text-align: left !important;
 }
 
 .Carousel_tite_two {
@@ -52,7 +52,7 @@
 }
 
 /* Buttom Component */
-button {
+.carousel-button {
     cursor: pointer;
     font-weight: 700;
     font-family: Helvetica, "sans-serif";
@@ -60,27 +60,29 @@ button {
     padding: 10px 20px;
     border-radius: 100px;
     background: var(--color-Yellow);
+    color: black;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
     font-size: 15px;
 }
 
-button:hover {
+.carousel-button:hover {
     background: var(--color-LightGreen_a);
+    color: white;
 }
 
-button>svg {
+.carousel-button>svg {
     width: 34px;
     margin-left: 10px;
     transition: transform .3s ease-in-out;
 }
 
-button:hover svg {
+.carousel-button:hover svg {
     transform: translateX(5px);
 }
 
-button:active {
+.carousel-button:active {
     transform: scale(0.95);
 }
 
@@ -97,7 +99,7 @@ button:active {
 
     .Carousel_Left_side {
         max-width: 100%;
-        margin: 20rem 5rem auto 5rem;
+        margin: 20rem 5rem auto 5rem !important;
         align-items: flex-start;
     }
 
@@ -119,7 +121,7 @@ button:active {
         margin-bottom: 10px;
     }
 
-    button {
+    .carousel-button {
         margin-top: 2rem;
         font-weight: 100;
         padding: 5px 10px;
@@ -137,7 +139,7 @@ button:active {
 
     .Carousel_Left_side {
         max-width: 100%;
-        margin: 15rem 5rem auto 5rem;
+        margin: 15rem 5rem auto 5rem !important;
         align-items: flex-start;
     }
 
@@ -170,7 +172,7 @@ button:active {
 
     .Carousel_Left_side {
         max-width: 100%;
-        margin: 15rem 5rem auto 5rem;
+        margin: 15rem 5rem auto 5rem !important;
         align-items: flex-start;
     }
 

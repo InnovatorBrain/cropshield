@@ -25,7 +25,7 @@ function Carousel() {
                     <p className="Carousel_tite_two">Ensuring Agricultural Futures</p>
                     <p className="Carousel_title_text">Elevate Agricultural Futures through AI, Blockchain, and NFT-powered Crop Insurance Solutions.</p>
                     {/* BUTTON STARTS FORM HERE */}
-                    <button onClick={playClickSound}>
+                    <button className='carousel-button' onClick={playClickSound}>
                         <span>Discover More</span>
                         <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>

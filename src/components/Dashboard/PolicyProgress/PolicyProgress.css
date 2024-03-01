@@ -1,26 +1,29 @@
 .policy-progress-container {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(0, 0, 0, 0.3);
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: var(--color-asd1);
     max-width: 700px;
     margin: 2rem auto;
     justify-content: center;
+    font-family: var(--font-base);
 }
 
 .progress-bar {
     height: 20px;
     background-color: #ddd;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 10px;
     overflow: hidden;
 }
 
 .progress {
     height: 100%;
-    background-color: #4caf50;
+    background-color: var(--color-DarkGreen);
     border-radius: 5px;
+    font-size: 14px;
     text-align: center;
+    font-family: var(--font-base);
     color: white;
     transition: width 0.5s ease;
     /* Smooth transition for width change */
@@ -28,6 +31,7 @@
 
 .progress-label {
     line-height: 20px;
+    
 }
 
 .policy-details {
@@ -40,6 +44,7 @@
 
 label {
     margin-right: 10px;
+    
 }
 
 input {
@@ -55,7 +60,7 @@ input {
 
 button {
     padding: 8px 16px;
-    background-color: #4caf50;
+    background-color: var(--color-DarkGreen);
     color: white;
     border: none;
     border-radius: 4px;
@@ -63,7 +68,8 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: var(--color-Yellow);
+    color: black;
 }
 
 button:disabled {
