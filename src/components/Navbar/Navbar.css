@@ -228,6 +228,51 @@
     color: var(--color-LightGreen_b);
 }
 
+#p-links-- {
+    background-color: var(--color-Yellow) !important;
+    color: black !important;
+    box-shadow: 0px 0px 0px 2px rgba(52, 52, 53, 0.3);
+    border: none;
+    width: 100%;
+    display: block;
+    margin: 1rem auto !important;
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px 20px !important;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#p-links--:hover {
+    background-color: var(--color-LightGreen_a) !important;
+    color: white !important;
+}
+
+#p-links-tog {
+    background-color: var(--color-DarkGreen) !important;
+    color: white !important;
+    border: none;
+    max-width: 35%;
+    display: block;
+    margin: 1rem auto !important;
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px 20px !important;
+    font-size: 16px;
+    font-family: var(--font-base);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#p-links-tog:hover {
+    background-color: var(--color-LightGreen_a) !important;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+
 .app__navbar-smallscreen {
     display: none;
 }

@@ -83,7 +83,7 @@
     width: 100%;
     background-color: var(--color-Grey);
     padding: 20px;
-    box-shadow: 0px 0px 0px 4px rgba(52, 52, 53, 0.185);
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5) !important;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -95,10 +95,11 @@
 .form-title {
     text-align: start;
     font-family: var(--font-base);
+    font-weight: 600;
     color: white;
     font-size: 24px;
     color: white;
-    margin: auto;
+    margin:auto !important;
 }
 
 .form-title-text {
@@ -189,24 +190,24 @@
     font-size: 12px;
 }
 
-.submit {
-    background-color: var(--color-Yellow);
-    color: var(--color-DarkGreen);
+.submit-button {
+    background-color: var(--color-Yellow) !important;
+    color: black !important;
     border: none;
     width: 100%;
     display: block;
-    margin: 1rem auto;
+    margin: 1rem auto !important;
     text-align: center;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.submit:hover {
-    background-color: var(--color-LightGreen_a);
-    color: white;
+.submit-button:hover {
+    background-color: var(--color-LightGreen_a) !important;
+    color: white !important;
 }
 
 

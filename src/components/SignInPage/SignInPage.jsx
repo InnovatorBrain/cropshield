@@ -53,7 +53,7 @@ function SignInPage() {
                         <div className="passwordOptions">
                             <Link to="/forgot-password" className="Register-form-forgetPassword">Forget Password</Link>
                         </div>
-                        <button type="submit" className="submit">Sign In</button>
+                        <button type="submit" className="submit-button">Sign In</button>
                         <div className='Register-page-if-accountexist'>
                             <p className='Register-page-if-accounttext'>If you don't have an account</p>
                             <Link to="/register" className='Register-page-if-accountlink'>Register Now</Link>

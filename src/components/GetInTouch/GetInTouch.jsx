@@ -94,7 +94,7 @@ const GetInTouch = () => {
                             value={formData.message}
                             onChange={handleChange}
                         />
-                        <button type="submit" className="submit" onClick={playClickSound}>Send Message</button>
+                        <button type="submit" className="submit-button" onClick={playClickSound}>Send Message</button>
                     </form>
                 </div>
 

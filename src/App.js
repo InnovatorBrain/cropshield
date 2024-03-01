@@ -51,12 +51,12 @@ function App() {
               <OfferLogo /><GetInTouch /><Footer /></div></>} />
             {/* AboutUs */}
             <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /><HeaderBlock /><Headings title="Explore Our Mission." text="From rural enthusiasts to seasoned agriculturists, and from local co-ops to global enterprises, our community leverages CropShield to enhance crop management, mitigate risks, and propel agricultural innovation." linkText="Learn more about our purpose" /><AnimeCounter /> <GetInTouch /><Footer /></div></>} />
-            {/* Register */}
-            <Route path="/Register" element={<><div className='Register'><RegisterPage /></div></>} />
             {/* Help & Support*/}
             <Route path="/help" element={<><div className='SUPPORT'><Navbar /> <SupportHeader title="Help & Support" /><GetInTouch /><Footer /></div></>} />
+            {/* Register */}
+            <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer/></div></>} />
             {/* SignIn */}
-            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /></div></>} />
+            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer/></div></>} />
             {/* Dashboard */}
             <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />

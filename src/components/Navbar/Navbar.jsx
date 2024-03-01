@@ -138,7 +138,7 @@ const Navbar = () => {
                   <Link to="/Dashboard" className='p-links' onClick={() => setToggleMenu(false)} title='Dashboard'><IoPersonSharp size={20} /></Link>
                 </li>
                 <li id='app__table-cart'>
-                  <Link to="/Register" className='p-links' onClick={() => setToggleMenu(false)} title='Register Now'>Get Started</Link>
+                  <Link to="/Register" className='p-links' id='p-links-tog' onClick={() => setToggleMenu(false)} title='Register Now'>Get Started</Link>
                 </li>
               </ul>
             </div>
