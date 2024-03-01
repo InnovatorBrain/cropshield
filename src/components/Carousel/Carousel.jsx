@@ -20,7 +20,7 @@ function Carousel() {
         <>
             <div className="Carousel_Container">
                 {/* LEFT_SIDE */}
-                <div className="Carousel_Left_side">
+                <div className="Carousel_Left_sidee">
                     <h1 className="Carousel_tite_one">Harvesting Confidence, </h1>
                     <p className="Carousel_tite_two">Ensuring Agricultural Futures</p>
                     <p className="Carousel_title_text">Elevate Agricultural Futures through AI, Blockchain, and NFT-powered Crop Insurance Solutions.</p>

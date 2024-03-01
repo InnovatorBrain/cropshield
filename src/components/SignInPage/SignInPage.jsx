@@ -10,6 +10,8 @@ function SignInPage() {
         password: ''
     });
 
+    const [error, setError] = useState('');
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -21,12 +23,18 @@ function SignInPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://your-api-endpoint.com/login/', formData);
-            console.log(response.data); // Do something with the response if needed
-            // Optionally, you can redirect the user to another page after successful login
+            const response = await axios.post('http://localhost:8000/auth/SignIn/', formData);
+            console.log(response.data); // Log response data for debugging
+            // Check if login was successful based on response data
+            if (response.status === 200) {
+                // Redirect user to dashboard upon successful login
+                window.location.href = '/dashboard';
+            } else {
+                setError('Login failed. Please try again.'); // Handle other response statuses if needed
+            }
         } catch (error) {
             console.error('Login failed:', error);
-            // Handle error state or display error message to the user
+            setError('Login failed. Please try again.'); // Display error message to the user
         }
     };
 
@@ -50,6 +58,7 @@ function SignInPage() {
                         <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
                         <label htmlFor="password" className="label">Password</label>
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
+                        {error && <p className="error">{error}</p>} {/* Display error message if login fails */}
                         <div className="passwordOptions">
                             <Link to="/forgot-password" className="Register-form-forgetPassword">Forget Password</Link>
                         </div>

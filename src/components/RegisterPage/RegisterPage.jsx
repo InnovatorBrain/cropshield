@@ -10,10 +10,10 @@ function RegisterPage() {
     last_name: '',
     email: '',
     password: '',
-    confirmPassword: '' // Add confirmPassword field to state
+    confirm_password: '' 
   });
 
-  const [error, setError] = useState(''); // State for error message
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,19 +26,36 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Check if all fields are filled
+    const { first_name, last_name, email, password, confirm_password } = formData;
+    if (!first_name || !last_name || !email || !password || !confirm_password) {
+      setError('Please fill out all fields.');
+      return;
+    }
+
     // Check if passwords match
-    if (formData.password !== formData.confirmPassword) {
+    if (password !== confirm_password) {
       setError('Passwords do not match');
       return;
     }
 
     try {
-      const response = await axios.post('http://your-api-endpoint.com/register/', formData);
-      console.log(response.data); // Do something with the response if needed
-      // Optionally, you can redirect the user to another page after successful registration
+      const response = await axios.post('http://localhost:8000/auth/register/', formData);
+      console.log(response.data);
+      // Clear form fields
+      setFormData({
+        first_name: '',
+        last_name: '',
+        email: '',
+        password: '',
+        confirm_password: ''
+      });
+      // Redirect to sign-in page
+      window.location.href = '/SignIn';
     } catch (error) {
       console.error('Registration failed:', error);
       // Handle error state or display error message to the user
+      setError('Registration failed. Please try again.');
     }
   };
 
@@ -67,9 +84,9 @@ function RegisterPage() {
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
             <label htmlFor="password" className="label">Password</label>
             <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
-            <label htmlFor="confirmPassword" className="label">Confirm Password</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} required className="input" />
-            {error && <p className="error">{error}</p>} {/* Display error message if passwords do not match */}
+            <label htmlFor="confirm_password" className="label">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} required className="input" />
+            {error && <p className="error">{error}</p>}
             <div className="passwordOptions">
               <Link to="" type="button" className="Register-form-forgetPassword">Forget Password</Link>
             </div>

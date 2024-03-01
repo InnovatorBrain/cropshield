@@ -15,7 +15,7 @@
     max-height: 700px;
 }
 
-.Carousel_Left_side {
+.Carousel_Left_sidee {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -98,9 +98,12 @@
         justify-content: center;
     }
 
-    .Carousel_Left_side {
+    .Carousel_Left_sidee {
         max-width: 100%;
-        margin: 20rem 5rem auto 5rem !important;
+        margin-top: 20rem !important;
+        margin-right:5rem; 
+        margin-bottom: auto;
+        margin-left:  5rem;
         align-items: flex-start;
     }
 
@@ -138,7 +141,7 @@
         justify-content: center;
     }
 
-    .Carousel_Left_side {
+    .Carousel_Left_sidee {
         max-width: 100%;
         margin: 15rem 5rem auto 5rem !important;
         align-items: flex-start;
@@ -171,7 +174,7 @@
         justify-content: center;
     }
 
-    .Carousel_Left_side {
+    .Carousel_Left_sidee {
         max-width: 100%;
         margin: 15rem 5rem auto 5rem !important;
         align-items: flex-start;
