@@ -114,7 +114,7 @@
 .Register-form-forgetPassword {
     font-family: var(--font-base);
     color: white;
-    font-size: 12px;
+    font-size: 14px !important;
 }
 
 .Register-form-forgetPassword:hover {
@@ -134,13 +134,15 @@
 .Register-page-if-accounttext {
     font-family: var(--font-base);
     color: white;
-    font-size: 12px;
+    font-size: 16px !important;
+    font-weight: 500;
 }
 
 .Register-page-if-accountlink {
     font-family: var(--font-base);
     color: white;
-    font-size: 12px;
+    font-size: 16px !important;
+     font-weight: 500;
     text-decoration: underline;
     margin-left: 10px;
 }

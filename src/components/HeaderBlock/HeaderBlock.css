@@ -31,6 +31,7 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .Carousel_title_text {
@@ -49,7 +50,7 @@
         max-width: 100%;
         align-items: flex-start;
         /* align-self: center; */
-        margin: 10rem 2rem auto 2rem;
+        margin: 10rem 2rem auto 2rem !important;
     }
 
     .Carousel_tite_one {
@@ -72,7 +73,7 @@
         max-width: 100%;
         align-items: flex-start;
         /* align-self: center; */
-        margin: 10rem 2rem auto 2rem;
+        margin: 10rem 2rem auto 2rem !important;
     }
 
     .Carousel_tite_one {
@@ -94,7 +95,7 @@
         max-width: 100%;
         align-items: flex-start;
         /* align-self: center; */
-        margin: 10rem 2rem auto 2rem;
+        margin: 10rem 2rem auto 2rem !important;
     }
 
     .Carousel_tite_one {

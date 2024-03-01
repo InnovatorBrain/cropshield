@@ -54,9 +54,9 @@ function App() {
             {/* Help & Support*/}
             <Route path="/help" element={<><div className='SUPPORT'><Navbar /> <SupportHeader title="Help & Support" /><GetInTouch /><Footer /></div></>} />
             {/* Register */}
-            <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer/></div></>} />
+            <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer /></div></>} />
             {/* SignIn */}
-            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer/></div></>} />
+            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer /></div></>} />
             {/* Dashboard */}
             <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
