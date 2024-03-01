@@ -3,8 +3,8 @@
 </p>
 
 
-<a href="https://innovatorbrain.github.io/">
-  <img align="center" src="https://img.shields.io/badge/View%20The%20Page-Click%20Me-blue" alt="center">
+<a href="https://innovatorbrain.github.io/cropshield/">
+  <img align="center" src="https://img.shields.io/badge/View%20The%20Page-Tick%20Option-blue" alt="center">
 </a>
 
 
