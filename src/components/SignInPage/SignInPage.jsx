@@ -6,7 +6,7 @@ import "./SignInPage.css";
 
 function SignInPage() {
     const [formData, setFormData] = useState({
-        email: '',
+        username: '', // Change 'email' to 'username'
         password: ''
     });
 
@@ -54,8 +54,8 @@ function SignInPage() {
                 <div className="RegisterPageRightSide">
                     <form className="form" onSubmit={handleSubmit}>
                         <span className="form-title">Sign In</span>
-                        <label htmlFor="email" className="label">Email</label>
-                        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="input" />
+                        <label htmlFor="username" className="label">Username</label> {/* Change 'Email' to 'Username' */}
+                        <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required className="input" /> {/* Change 'email' to 'username' */}
                         <label htmlFor="password" className="label">Password</label>
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
                         {error && <p className="error">{error}</p>} {/* Display error message if login fails */}

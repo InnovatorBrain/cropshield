@@ -68,8 +68,11 @@ function ResetPasswordEmailPage() {
               <button type="submit" className="submit-button">Reset Password</button>
             </form>
           ) : (
-            <div className="success-message">
+            <div className="resetPassword-success-message">
               <p>Password reset successfully!</p>
+              <Link to="/signin">
+                <button className="email-client-button" >Go to the SignIn Page</button>
+              </Link>
             </div>
           )}
         </div>

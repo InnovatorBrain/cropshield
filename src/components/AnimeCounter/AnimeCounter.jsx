@@ -31,7 +31,7 @@ const Counter = ({ initialValue, value, duration, label, valueSign }) => {
                     <div className="value" akhi={value}>{currentValue}</div>
                     <div className="valueSign">{valueSign}</div>
                 </div>
-                <div className="label">{label}</div>
+                <div className="Animelabel">{label}</div>
 
             </div>
         </>
