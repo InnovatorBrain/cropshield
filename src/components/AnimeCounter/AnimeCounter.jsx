@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './AnimeCounter.css'; 
+import './AnimeCounter.css';
 
 const Counter = ({ initialValue, value, duration, label, valueSign }) => {
     const [currentValue, setCurrentValue] = useState(initialValue);
@@ -40,8 +40,8 @@ const Counter = ({ initialValue, value, duration, label, valueSign }) => {
 
 const AnimeCounter = () => {
     const countersData = [
-        { value: 500, label: 'VISITORS DAILY', valueSign: '+' },
-        { value: 800, label: 'DELIVERIES MONTHLY', valueSign: '+' },
+        { value: 50, label: 'VISITORS DAILY', valueSign: '+' },
+        { value: 600, label: 'MONTHLY POLICY HOLDERS', valueSign: '+' },
         { value: 100, label: 'POSITIVE FEEDBACK', valueSign: '%' },
         { value: 70, label: 'AWARDS AND HONORS', valueSign: '+' }
     ];
@@ -49,21 +49,21 @@ const AnimeCounter = () => {
 
     return (
         <>
-        <hr className='Counter_hr'/>
-        <div className="Content">
-            
-            {countersData.map((counterData, index) => (
-                <Counter
-                    key={index}
-                    label={counterData.label}
-                    initialValue={0}
-                    value={counterData.value}
-                    duration={duration}
-                    valueSign={counterData.valueSign} // Pass valueSign to Counter component
-                />
-            ))}
-        </div>
-        <hr className='Counter_hr'/>
+            <hr className='Counter_hr' />
+            <div className="Content">
+
+                {countersData.map((counterData, index) => (
+                    <Counter
+                        key={index}
+                        label={counterData.label}
+                        initialValue={0}
+                        value={counterData.value}
+                        duration={duration}
+                        valueSign={counterData.valueSign} // Pass valueSign to Counter component
+                    />
+                ))}
+            </div>
+            <hr className='Counter_hr' />
         </>
     );
 };

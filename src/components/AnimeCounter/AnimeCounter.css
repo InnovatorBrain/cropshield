@@ -7,9 +7,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: var(--color-asd2);
+    background: var(--color-asd1);
     width: 100%;
     padding: 40px;
+    color: black !important;
     /* height: 20vh; */
 
 }
@@ -24,6 +25,7 @@
 
 .counter {
     text-align: center;
+    color: black !important;
 }
 
 .CounterUpLine {
@@ -38,7 +40,7 @@
     display: block;
     font-family: var(--font-accent);
     font-weight: normal;
-    color: var(--color-orange);
+    color: var(--color-Yellow);
 
 }
 
@@ -47,17 +49,16 @@
     display: block;
     font-family: var(--font-accent);
     font-weight: normal;
-    color: var(--color-graye);
+    color: black;
 }
 
 .label {
     margin-top: 5px;
-    color: var(--color-graye);
-    font-size: 14px;
-    font-family: var(--font-accent);
-
+    font-size: 16px;
+    font-family: var(--font-base);
+    color: black !important;
     display: block;
-    font-weight: bold;
+    font-weight: 600;
 
 }
 
