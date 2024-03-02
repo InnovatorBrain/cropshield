@@ -60,7 +60,7 @@ function SignInPage() {
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
                         {error && <p className="error">{error}</p>} {/* Display error message if login fails */}
                         <div className="passwordOptions">
-                            <Link to="/forgot-password" className="Register-form-forgetPassword">Forget Password</Link>
+                            <Link to="/send-password-Email" className="Register-form-forgetPassword">Forget Password</Link>
                         </div>
                         <button type="submit" className="submit-button">Sign In</button>
                         <div className='Register-page-if-accountexist'>

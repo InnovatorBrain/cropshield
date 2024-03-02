@@ -14,6 +14,8 @@ import Footer from './components/Footer/Footer';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 // SignIn Page
 import SignInPage from './components/SignInPage/SignInPage';
+import ResetPasswordPage from './components/ResetEmail/ResetEmail';
+import ResetPasswordEmailPage from './components/ResetPassword/ResetPassword';
 // AboutUs Page
 import HeaderBlock from './components/HeaderBlock/HeaderBlock';
 import Headings from './components/Headings/Headings';
@@ -55,6 +57,9 @@ function App() {
             <Route path="/help" element={<><div className='SUPPORT'><Navbar /> <SupportHeader title="Help & Support" /><GetInTouch /><Footer /></div></>} />
             {/* Register */}
             <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer /></div></>} />
+            {/* ResetPasswordPage */}
+            <Route path="/send-password-Email" element={<><div className='Register'><ResetPasswordPage/></div></>} />
+            <Route path="/reset-password-Email/:uid/:token" element={<><div className='Register'><ResetPasswordEmailPage/></div></>} />
             {/* SignIn */}
             <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer /></div></>} />
             {/* Dashboard */}

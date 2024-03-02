@@ -88,7 +88,7 @@ function RegisterPage() {
             <input type="password" id="confirm_password" name="confirm_password" value={formData.confirm_password} onChange={handleChange} required className="input" />
             {error && <p className="error">{error}</p>}
             <div className="passwordOptions">
-              <Link to="" type="button" className="Register-form-forgetPassword">Forget Password</Link>
+              <Link to="" type="button" className="Register-form-forgetPassword">With All Terms & Conditions</Link>
             </div>
             <button type="submit" className="submit-button">Register</button>
             <div className='Register-page-if-accountexist'>
