@@ -58,12 +58,12 @@ function App() {
             {/* Register */}
             <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer /></div></>} />
             {/* ResetPasswordPage */}
-            <Route path="/send-password-Email" element={<><div className='Register'><ResetPasswordPage/></div></>} />
-            <Route path="/reset-password-Email/:uid/:token" element={<><div className='Register'><ResetPasswordEmailPage/></div></>} />
+            <Route path="/send-password-Email" element={<><div className='Register'><ResetPasswordPage /><Footer /></div></>} />
+            <Route path="/reset-password-Email/:uid/:token" element={<><div className='Register'><ResetPasswordEmailPage /> <Footer /></div></>} />
             {/* SignIn */}
             <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer /></div></>} />
             {/* Dashboard */}
-            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /></div></>} />
+            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /> </div></>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
             <Route path="/Dashboard/apply-policy" element={<><div className='DASHBOARD'> <DashboardLayoutApplyPolicy /></div></>} />
             <Route path="/Dashboard/applied-policy" element={<><div className='DASHBOARD'> <DashboardAppliedPolicy /></div></>} />
