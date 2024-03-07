@@ -42,7 +42,7 @@
     margin: 1rem auto;
 }
 .profileBlockButton{
-    background-color: var(--color-DarkGreen);
+    background-color: var(--color-icon);
     color: white;
 }
 .profileBlockButton:hover{

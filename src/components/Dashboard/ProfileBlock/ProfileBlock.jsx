@@ -1,42 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import "./ProfileBlock.css";
 
 const ProfileBlock = () => {
-    // State to store user data
     const [userData, setUserData] = useState({
-        name: "",
+        first_name: "",
+        last_name: "",
         email: "",
         passwordLastChanged: ""
     });
 
-    // Effect to fetch user data from API
     useEffect(() => {
-        // Sample API endpoint to fetch user data
-        fetchUserDataFromAPI()
-            .then(data => setUserData(data))
-            .catch(error => console.error("Error fetching user data: ", error));
+        fetchUserDataFromAPI();
     }, []);
 
-    // Function to fetch user data from API (Replace with actual API call)
     const fetchUserDataFromAPI = async () => {
-        // Sample data (Replace with actual API call)
-        return {
-            name: "John Doe",
-            email: "john.doe@example.com",
-            passwordLastChanged: "a month ago"
-        };
+        const token = localStorage.getItem('token');
+
+        try {
+            const response = await axios.get('http://127.0.0.1:8000/auth/profile-data/', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            setUserData(response.data);
+        } catch (error) {
+            console.error("Error fetching user data: ", error);
+        }
     };
 
     return (
         <div className="profileBlock-main-container">
             <div className="profileBlock-container">
                 <div className="profileBlock-image-container">
-                    {/* Use userData.name or any other field to personalize the image URL */}
-                    <img src={`https://source.unsplash.com/100x100/?profile/${userData.name}`} alt="Profile" />
+                    <img src={`https://source.unsplash.com/100x100/?profile/${userData.first_name}`} alt="Profile" />
                 </div>
                 <div className="profileBlock-text-container">
-                    <h1 className='profileBlock-text-username'>{userData.name}</h1>
+                    <h1 className='profileBlock-text-username'>{userData.first_name} {userData.last_name}</h1>
                     <button className='profileBlockButton'>Edit Profile</button>
                 </div>
                 <div className="profileBlock-email-container">

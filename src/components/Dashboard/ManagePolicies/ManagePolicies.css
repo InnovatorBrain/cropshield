@@ -1,0 +1,81 @@
+/* ManagePolicies.css */
+.manage-policies-container {
+    margin: 2rem 2rem;
+}
+
+.manage-policies-heading {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font-base);
+    color: var(--color-DarkGreen);
+    margin: 1rem auto;
+}
+
+.table-container {
+    font-size: 14px;
+    font-family: var(--font-base);
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.policy-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.policy-table th,
+.policy-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.policy-table th {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.35);
+    background-color: var(--color-footer);
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--font-base);
+}
+
+.policy-table tbody tr:hover {
+    background-color: var(--color-asd1);
+}
+
+.action-buttons button {
+    margin: 5px;
+    margin-right: 1rem;
+    /* Adjust margin for smaller screens */
+    padding: 8px 16px;
+    background-color: var(--color-icon);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: var(--color-Yellow);
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .manage-policies-heading {
+        font-size: 20px;
+    }
+
+    .policy-table th,
+    .policy-table td {
+        padding: 8px;
+    }
+
+    .action-buttons button {
+        padding: 6px 10px;
+        margin: 5px;
+    }
+}

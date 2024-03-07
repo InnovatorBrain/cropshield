@@ -15,7 +15,7 @@
     /* Rounded corners */
     width: 100%;
     /* Fill available width */
-    max-width: 700px;
+    max-width: 800px;
     /* Set a maximum width */
     margin: 2rem auto;
     /* Center the form horizontally */
@@ -25,10 +25,10 @@
 
 .apply-policy-form-section-headings {
     font-family: var(--font-base);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
-    color: var(--color-DarkGreen);
-    opacity: 0.85;
+    color: var(--color-footer);
+    opacity: 1;
 
 }
 
@@ -84,10 +84,13 @@ select:focus {
     border-color: #999;
     /* Change border color on focus */
 }
+
 #apply-policy-checkbox {
     display: flex;
-    align-items: center; /* Align items vertically */
-    text-align: left; /* Align text to the left */
+    align-items: center;
+    /* Align items vertically */
+    text-align: left;
+    /* Align text to the left */
 }
 
 .apply-policy-checkbox {
@@ -100,10 +103,14 @@ select:focus {
     height: 20px;
     border: 1px solid #000;
     cursor: pointer;
-    margin-right: 8px; /* Add some space between checkbox and label */
-    font-size: 14px; /* Adjust font size */
-    line-height: 20px; /* Center text vertically */
-    text-align: center; /* Center text horizontally */
+    margin-right: 8px;
+    /* Add some space between checkbox and label */
+    font-size: 14px;
+    /* Adjust font size */
+    line-height: 20px;
+    /* Center text vertically */
+    text-align: center;
+    /* Center text horizontally */
 }
 
 .checked {
@@ -112,7 +119,8 @@ select:focus {
 }
 
 .applypolicycheckboxlabel {
-    margin-left: 8px; /* Add some space between checkbox and label */
+    margin-left: 8px;
+    /* Add some space between checkbox and label */
 }
 
 
@@ -138,7 +146,8 @@ button[type="submit"]:hover {
     color: rgb(0, 0, 0, 1);
     /* Darker green on hover for submit button */
 }
-.location-inputs input{
+
+.location-inputs input {
     margin-bottom: 10px;
 }
 

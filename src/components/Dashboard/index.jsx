@@ -16,6 +16,7 @@ import DashInsurance from './DashInsurance/DashInsurance';
 import DashApplyPolicy from './DashApplyPolicy/DashApplyPolicy';
 import AppliedPolicy from './AppliedPolicy/AppliedPolicy'
 import PolicyProgress from "./PolicyProgress/PolicyProgress";
+import ManagePolicies from './ManagePolicies/ManagePolicies';
 
 function DashboardLayout() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -39,6 +40,7 @@ function DashboardLayout() {
                     < DashHomeBlock />
                     <ProfileBlock />
                 </div>
+                <ManagePolicies />
             </div>
         </div>
     );
@@ -112,6 +114,30 @@ function DashboardAppliedPolicy() {
         </div>
     );
 }
+// -------------------ManagePolicy--------------------
+function DashboardManagePolicy() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    return (
+        <div className="dashboard-container">
+            <div className={`DashSideBar-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+                <div className="dashSidebar-toggle-button" onClick={toggleSidebar}>
+                    <RxHamburgerMenu />
+                </div>
+                {isSidebarOpen && <DashSidebar />}
+            </div>
+            <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+                <DashHeader />
+                <ManagePolicies />
+
+            </div>
+        </div>
+    );
+}
 // -------------------PROGRESS--------------------
 function DashboardProgress() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -130,11 +156,11 @@ function DashboardProgress() {
             </div>
             <div className={`dash-main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
                 <DashHeader />
-                <PolicyProgress/>
-                
+                <PolicyProgress />
+
             </div>
         </div>
     );
 }
 
-export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy, DashboardProgress };
+export { DashboardLayout, DashboardLayoutInsurance, DashboardLayoutApplyPolicy, DashboardAppliedPolicy, DashboardProgress, DashboardManagePolicy };

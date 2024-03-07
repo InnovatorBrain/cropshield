@@ -31,13 +31,14 @@ function DashSidebar() {
           <Link to="" className='DashSidebar-ListDropdowns-Insurance'>
             <div className="dropdown">
               <button className='DashSidebar-Lists-buttons'>
-                <span className='DashSidebar-Lists-buttons-span'><HiOutlineMenuAlt2 className='Dashsidebar-list-icons' />Insurance</span>
+                <span className='DashSidebar-Lists-buttons-span'><HiOutlineMenuAlt2 className='Dashsidebar-list-icons' />My Policies</span>
               </button>
               <div className="dropdown-content-of-dashsidebar-lists">
                 {/* Dropdown content goes here */}
                 <Link to="/dashboard/apply-policy" className='dropdown-item'>Apply Policy</Link>
                 <Link to="/dashboard/applied-policy" className='dropdown-item'>Applied</Link>
-                <Link to="/dashboard/All" className='dropdown-item'>Policy Categories</Link>
+                <Link to="/dashboard/Manage-Policy" className='dropdown-item'>Manage Policies</Link>
+                <Link to="/dashboard/All" className='dropdown-item'>Renew</Link>
                 <Link to="/dashboard/Progress" className='dropdown-item'>Progress</Link>
                 {/* Add more dropdown items as needed */}
               </div>
