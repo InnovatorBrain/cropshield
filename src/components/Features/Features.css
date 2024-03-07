@@ -13,6 +13,33 @@
 .features-main-container::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(45deg, #ffcccc, #99ccff),
+        radial-gradient(circle, #ffcccc 20%, transparent 20%),
+        radial-gradient(circle, #99ccff 20%, transparent 20%);
+    background-size: 300% 100%;
+    background-position: top left;
+    animation: wave 4s infinite alternate linear;
+    z-index: -1;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.features-main-container::after {
+    content: '';
+    position: absolute;
     top: -50%;
     left: -50%;
     width: 200%;
@@ -24,8 +51,14 @@
     background-position: 0 0, 25px 25px;
     transform: rotate(-45deg);
     z-index: -1;
-    opacity: 0.8; /* Adjust opacity for a more subtle effect */
+    opacity: 0.8;
 }
+
+
+
+
+
+
 
 
 
@@ -202,6 +235,14 @@
         padding: 0;
     }
 
+    .features-main-container::before,
+    .features-main-container::after {
+        top: -25%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
+    }
+
     /* ---------LEFT_SIDE-STARTS-------------- */
     .features-left-side {
         justify-content: flex-start;
@@ -260,6 +301,14 @@
         flex-direction: column;
         width: 100%;
         padding: 0;
+    }
+
+    .features-main-container::before,
+    .features-main-container::after {
+        top: -25%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
     }
 
     /* ---------LEFT_SIDE-STARTS-------------- */
@@ -325,6 +374,14 @@
         padding: 0;
     }
 
+    .features-main-container::before,
+    .features-main-container::after {
+        top: -25%;
+        left: -25%;
+        width: 180%;
+        height: 130%;
+    }
+
     /* ---------LEFT_SIDE-STARTS-------------- */
     .features-left-side {
         justify-content: flex-start;
@@ -387,6 +444,14 @@
         flex-direction: row;
         width: 100%;
         padding: 0;
+    }
+
+    .features-main-container::before,
+    .features-main-container::after {
+        top: -25%;
+        left: -25%;
+        width: 150%;
+        height: 150%;
     }
 
     /* ---------LEFT_SIDE-STARTS-------------- */
