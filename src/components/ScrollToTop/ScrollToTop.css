@@ -2,8 +2,8 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background-color: var(--color-Yellow); /* Adjust color as needed */
-    color: var(--color-footer); /* Adjust color as needed */
+    background-color: var(--color-Yellow);
+    color: var(--color-footer);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -15,6 +15,16 @@
     animation: heartbeat 1s infinite alternate;
 }
 
+.scroll-top-button:hover {
+
+    background-color: var(--color-LightGreen_a);
+    /* Adjust color as needed */
+    color: white;
+    /* Adjust color as needed */
+    transition: opacity 0.5s ease;
+    animation: heartbeat 1s infinite alternate;
+}
+
 .scroll-top-button.show {
     opacity: 1;
 }
@@ -23,6 +33,7 @@
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(1.1);
     }
