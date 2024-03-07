@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // _________COMPONENTS__________
 import SplashScreen from './components/SplashScreen/SplashScreen';
+import ScrollTopButton from './components/ScrollToTop/ScrollToTop';
 import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
 import SubHeading from './components/SubHeading/SubHeading';
@@ -46,24 +47,24 @@ function App() {
           <Routes>
             {/* Home */}
             <Route path="/" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><GetInTouch /><Footer /></div></>} />
+              <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             <Route path="/cropshield" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><GetInTouch /><Footer /></div></>} />
+              <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             <Route path="/home" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><GetInTouch /><Footer /></div></>} />
+              <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             {/* AboutUs */}
-            <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /><HeaderBlock /><Headings title="Explore Our Mission." text="From rural enthusiasts to seasoned agriculturists, and from local co-ops to global enterprises, our community leverages CropShield to enhance crop management, mitigate risks, and propel agricultural innovation." linkText="Learn more about our purpose" /><AnimeCounter /> <GetInTouch /><Footer /></div></>} />
+            <Route path="/AboutUs" element={<><div className='ABOUTUS'><Navbar /><HeaderBlock /><Headings title="Explore Our Mission." text="From rural enthusiasts to seasoned agriculturists, and from local co-ops to global enterprises, our community leverages CropShield to enhance crop management, mitigate risks, and propel agricultural innovation." linkText="Learn more about our purpose" /><AnimeCounter /> <GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             {/* Help & Support*/}
-            <Route path="/help" element={<><div className='SUPPORT'><Navbar /> <SupportHeader title="Help & Support" /><GetInTouch /><Footer /></div></>} />
+            <Route path="/help" element={<><div className='SUPPORT'><Navbar /> <SupportHeader title="Help & Support" /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             {/* Register */}
-            <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer /></div></>} />
+            <Route path="/Register" element={<><div className='Register'><RegisterPage /> <Footer /> </div> <ScrollTopButton /></>} />
             {/* ResetPasswordPage */}
-            <Route path="/send-password-Email" element={<><div className='Register'><ResetPasswordPage /><Footer /></div></>} />
-            <Route path="/reset-password-Email/:uid/:token" element={<><div className='Register'><ResetPasswordEmailPage /> <Footer /></div></>} />
+            <Route path="/send-password-Email" element={<><div className='Register'><ResetPasswordPage /><Footer /></div> <ScrollTopButton /></>} />
+            <Route path="/reset-password-Email/:uid/:token" element={<><div className='Register'><ResetPasswordEmailPage /> <Footer /></div><ScrollTopButton /></>} />
             {/* SignIn */}
-            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer /></div></>} />
+            <Route path="/SignIn" element={<><div className='SignIn'><SignInPage /><Footer /></div> <ScrollTopButton /></>} />
             {/* Dashboard */}
-            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /> </div></>} />
+            <Route path="/Dashboard" element={<><div className='DASHBOARD'> <DashboardLayout /> </div> </>} />
             <Route path="/Dashboard/insurance" element={<><div className='DASHBOARD'> <DashboardLayoutInsurance /></div></>} />
             <Route path="/Dashboard/apply-policy" element={<><div className='DASHBOARD'> <DashboardLayoutApplyPolicy /></div></>} />
             <Route path="/Dashboard/applied-policy" element={<><div className='DASHBOARD'> <DashboardAppliedPolicy /></div></>} />
