@@ -15,7 +15,10 @@ import SupportImageOne from "../assets/HelpAndSupport/supportOne.jpg"
 // AboutUs
 import AboutUsImageOne from "../assets/AboutUs/Grain1.jpeg"
 
-
+// Features
+import FeatureImageOne from "../assets/Features/img-1.png"
+import FeatureImageTwo from "../assets/Features/img-2.png"
+import FeatureImageThree from "../assets/Features/img-3.png"
 //Dashboard-images-home
 import DashHomeBlockImage1 from '../assets/DashboardHome/noun-agriculture.png'
 import DashHomeBlockImage2 from '../assets/DashboardHome/noun-water.png'
@@ -36,5 +39,8 @@ const images = {
     AboutUs: {
         AboutUsImageOne,
     },
+    Features: {
+        FeatureImageOne, FeatureImageTwo, FeatureImageThree,
+    }
 }
 export default images

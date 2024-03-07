@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
 import SubHeading from './components/SubHeading/SubHeading';
 import OfferLogo from './components/OfferLogo/OfferLogo';
+import Features from './components/Features/Features';
 import GetInTouch from './components/GetInTouch/GetInTouch';
 import Footer from './components/Footer/Footer';
 // Register Page
@@ -47,9 +48,9 @@ function App() {
           <Routes>
             {/* Home */}
             <Route path="/" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
+              <OfferLogo /><Features /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             <Route path="/cropshield" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
-              <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
+              <OfferLogo /><Features /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             <Route path="/home" element={<><div className='HOME'><Navbar /><Carousel /> <SubHeading hint="AI and Blockchain-Based Crop Insurance System" title="Shielding Your Harvest, Securing Your Future" text="Sow the seeds of security with CropShield, your digital ally in the fields. Seamlessly merging AI prowess with agricultural expertise, CropShield delivers swift and precise insurance solutions, empowering farmers to nurture their crops with unwavering assurance. Whether it's tilling the soil, nurturing fresh fruits, cultivating vegetables, or harvesting awesome wheats, CropShield stands as the guardian of your agricultural endeavors, ensuring resilience and prosperity with every harvest." />
               <OfferLogo /><GetInTouch /><Footer /></div> <ScrollTopButton /></>} />
             {/* AboutUs */}

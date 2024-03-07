@@ -141,6 +141,7 @@
 
 
 .dropdown-content {
+    border-top: 3px solid var(--color-Yellow);
     opacity: 0;
     position: absolute;
     /* top: 80px; */
