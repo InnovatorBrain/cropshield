@@ -73,6 +73,7 @@
     flex-wrap: wrap;
 }
 
+
 .Support-left-p {
     font-family: var(--font-base);
     font-size: 14px;
@@ -84,9 +85,12 @@
 .Support-left-link {
     font-family: var(--font-base);
     font-size: 20px;
-    color: var(--color-LightGreen_b);
+    color: var(--color-icon);
     text-decoration: underline;
     margin-top: 10px;
+}
+.Support-left-link:hover {
+    color: var(--color-footer);
 }
 
 .Support-right-container {
