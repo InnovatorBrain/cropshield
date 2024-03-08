@@ -9,6 +9,9 @@ import OfferLogoFour from "../assets/OfferLogoIcons/4.png"
 import OfferLogoFive from "../assets/OfferLogoIcons/5.png"
 import OfferLogoSix from "../assets/OfferLogoIcons/6.png"
 
+// Register
+import RegisterImageOne from "../assets/RegisterPage/ImageOneIs.png"
+import RegisterImageTwo from "../assets/RegisterPage/okies.png"
 // Support & Help
 import SupportImageOne from "../assets/HelpAndSupport/supportOne.jpg"
 
@@ -41,6 +44,9 @@ const images = {
     },
     Features: {
         FeatureImageOne, FeatureImageTwo, FeatureImageThree,
+    },
+    Register: {
+        RegisterImageOne, RegisterImageTwo
     }
 }
 export default images

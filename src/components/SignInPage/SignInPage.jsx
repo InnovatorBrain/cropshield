@@ -48,8 +48,10 @@ function SignInPage() {
                         </Link>
                         <span>/ Sign In</span>
                     </div>
-                    <h3 className='RegisterPageTitle'>Sign In to Your Account</h3>
-                    <p className='RegisterPageText'>Welcome back! Please enter your credentials.</p>
+                    <div className="RegisterPageTitle-div">
+                        <h3 className='RegisterPageTitle'>Sign In to Your Account</h3>
+                        <p className='RegisterPageText'>Welcome back! Please enter your credentials.</p>
+                    </div>
                 </div>
                 <div className="RegisterPageRightSide">
                     <form className="form" onSubmit={handleSubmit}>

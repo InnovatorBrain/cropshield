@@ -15,13 +15,18 @@
 }
 
 /* LEFTSIDE */
+
 .RegisterPageLefttSide {
     display: flex;
     justify-content: flex-start;
-    max-width: 50%;
+    width: 50%;
+    height: 500px;
     flex-direction: column;
     margin: auto 2rem;
-
+    background-image: url(../../assets/RegisterPage/ImageOneIs.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .breadcrumb {
@@ -42,25 +47,33 @@
     font-size: 18px;
 }
 
-.RegisterPageTitle {
+.RegisterPageTitle-div {
     display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    height: 100vh;
+}
+
+.RegisterPageTitle {
     font-family: var(--font-base);
-    text-align: flex-start;
     color: var(--color-Yellow);
-    font-size: 35px;
+    font-size: 36px;
     font-weight: bold;
-    margin: 0 auto 2rem 0;
+    margin-bottom: 1rem;
+    margin-top: auto;
 }
 
 .RegisterPageText {
-    text-align: start;
     font-family: var(--font-base);
     color: white;
     font-size: 14px;
-    color: white;
-    margin: auto auto 55px auto;
-
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 10px;
 }
+
+
 
 
 /* RightSide */
@@ -99,7 +112,7 @@
     color: white;
     font-size: 24px;
     color: white;
-    margin:auto !important;
+    margin: auto !important;
 }
 
 .form-title-text {
@@ -142,7 +155,7 @@
     font-family: var(--font-base);
     color: white;
     font-size: 16px !important;
-     font-weight: 500;
+    font-weight: 500;
     text-decoration: underline;
     margin-left: 10px;
 }
@@ -228,7 +241,7 @@
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-top: 4rem;
     }
@@ -262,7 +275,7 @@
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-top: 4rem;
     }
@@ -296,7 +309,7 @@
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-top: 4rem;
     }

@@ -8,7 +8,8 @@ import UpNav from '../UpNav/UpNav';
 
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { IoPersonSharp } from "react-icons/io5";
+// import { IoPersonSharp } from "react-icons/io5";
+import { MdDashboardCustomize } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
 import { GiHamburgerMenu } from 'react-icons/gi'
 const Navbar = () => {
@@ -95,7 +96,7 @@ const Navbar = () => {
 
         </ul>
         <div className='app__navbar-login' >
-          <Link to="/Dashboard" className='p-links' ><IoPersonSharp size={25} title='Dashboard' onClick={playClickSound} /></Link>
+          <Link to="/Dashboard" className='p-links' ><MdDashboardCustomize size={25} title='Dashboard' onClick={playClickSound} /></Link>
         </div>
         <div className='app__navbar-login'>
           <Link to="/Register" className='p-links' id='p-links--' title='Register Now'>Get Started</Link>
@@ -135,7 +136,7 @@ const Navbar = () => {
                 </li>
                 <li><Link to="/Help" onClick={() => setToggleMenu(false)}>Help & Support</Link></li>
                 <li id='app__login'>
-                  <Link to="/Dashboard" className='p-links' onClick={() => setToggleMenu(false)} title='Dashboard'><IoPersonSharp size={20} /></Link>
+                  <Link to="/Dashboard" className='p-links' onClick={() => setToggleMenu(false)} title='Dashboard'><MdDashboardCustomize size={20} /></Link>
                 </li>
                 <li id='app__table-cart'>
                   <Link to="/Register" className='p-links' id='p-links-tog' onClick={() => setToggleMenu(false)} title='Register Now'>Get Started</Link>

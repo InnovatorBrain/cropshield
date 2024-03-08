@@ -19,10 +19,14 @@
 .RegisterPageLefttSide {
     display: flex;
     justify-content: flex-start;
-    max-width: 50%;
+    width: 50%;
+    height: 500px;
     flex-direction: column;
-    margin: auto;
-
+    margin: auto 2rem;
+    background-image: url(../../assets/RegisterPage/ImageOneIs.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .breadcrumb {
@@ -43,24 +47,29 @@
     font-size: 18px;
 }
 
-.RegisterPageTitle {
+.RegisterPageTitle-div {
     display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    height: 100vh;
+}
+
+.RegisterPageTitle {
     font-family: var(--font-base);
-    text-align: flex-start;
     color: var(--color-Yellow);
     font-size: 35px;
     font-weight: bold;
-    margin: 0 auto 2rem 0;
+    margin-bottom: 1rem;
+    margin-top: auto;
 }
 
 .RegisterPageText {
-    text-align: flex-start;
     font-family: var(--font-base);
     color: white;
     font-size: 14px;
-    color: white;
-    margin: auto auto 55px 0;
-
+    margin-bottom: auto;
+    margin-top: 10px;
 }
 
 
@@ -209,16 +218,15 @@
 /* Media query for screens smaller than 576px (e.g., smartphones) */
 @media only screen and (max-width: 575.98px) {
     .SignInPageContainer {
-
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-        height: 100vh;
+        height: auto;
     }
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100% !important;
         flex-direction: column;
         margin-top: 4rem;
     }
@@ -233,7 +241,7 @@
 
     /* RightSide */
     .RegisterPageRightSide {
-        margin: 0 auto auto auto;
+        margin: auto;
         justify-content: center !important;
         align-items: center;
         max-width: 100%;
@@ -254,7 +262,7 @@
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-top: 4rem;
     }
@@ -290,7 +298,7 @@
 
     /* LEFTSIDE */
     .RegisterPageLefttSide {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-top: 4rem;
     }

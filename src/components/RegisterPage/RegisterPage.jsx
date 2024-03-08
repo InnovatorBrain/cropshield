@@ -10,7 +10,7 @@ function RegisterPage() {
     last_name: '',
     email: '',
     password: '',
-    confirm_password: '' 
+    confirm_password: ''
   });
 
   const [error, setError] = useState('');
@@ -69,8 +69,10 @@ function RegisterPage() {
             </Link>
             <span>/ Register</span>
           </div>
-          <h3 className='RegisterPageTitle'>Create Your Account</h3>
-          <p className='RegisterPageText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nihil rem. Tempora.</p>
+          <div className="RegisterPageTitle-div">
+            <h3 className='RegisterPageTitle'>Create Your Account</h3>
+            <p className='RegisterPageText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nihil rem. Tempora.</p>
+          </div>
         </div>
         <div className="RegisterPageRightSide">
           <form className="form" onSubmit={handleSubmit}>
