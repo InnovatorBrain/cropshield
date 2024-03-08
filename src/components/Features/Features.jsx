@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Features.css";
 import { TbPoint } from "react-icons/tb";
 import images from '../../constants/images';
+
 const Features = () => {
     const [activeButton, setActiveButton] = useState('content1'); // Initialize with 'content1'
 
@@ -23,7 +24,7 @@ const Features = () => {
                         We Empower Farmers Worldwide with Over 2000+ <span>Partners</span>
                     </p>
                     <p className='features-title-descriptions'>
-                    Revolutionize traditional approaches with AI-driven innovation in CropShield. Ensure seamless functionality.
+                        Revolutionize traditional approaches with AI-driven innovation in CropShield. Ensure seamless functionality.
                     </p>
                     <div className="features-title-points-div">
                         <p className="features-title-points" onClick={() => toggleContent('content1')}>
@@ -42,11 +43,11 @@ const Features = () => {
                     <div className="features-right-buttons-div">
                         <button className={activeButton === 'content1' ? 'active-button' : ''} onClick={() => toggleContent('content1')}>Full Satisfaction</button>
                         <button className={activeButton === 'content2' ? 'active-button' : ''} onClick={() => toggleContent('content2')}>Expert Team</button>
-                        <button className={activeButton === 'content3' ? 'active-button' : ''} onClick={() => toggleContent('content3')}>Mission & Vission</button>
+                        <button className={activeButton === 'content3' ? 'active-button' : ''} onClick={() => toggleContent('content3')}>Mission & Vision</button>
                     </div>
 
-                    <div className="features-content" style={{ display: activeButton === 'content1' ? 'block' : 'none' }}>
-                        <div className="features-content-main">
+                    <div className={`features-content ${activeButton === 'content1' ? 'active' : ''}`}>
+                        <div className="features-content-main fade-in">
                             <div className="features-image">
                                 <img src={images.Features.FeatureImageOne} alt="" />
                             </div>
@@ -59,8 +60,8 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="features-content" style={{ display: activeButton === 'content2' ? 'block' : 'none' }}>
-                        <div className="features-content-main">
+                    <div className={`features-content ${activeButton === 'content2' ? 'active' : ''}`}>
+                        <div className="features-content-main fade-in">
                             <div className="features-image">
                                 <img src={images.Features.FeatureImageTwo} alt="" />
                             </div>
@@ -73,8 +74,8 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="features-content" style={{ display: activeButton === 'content3' ? 'block' : 'none' }}>
-                        <div className="features-content-main">
+                    <div className={`features-content ${activeButton === 'content3' ? 'active' : ''}`}>
+                        <div className="features-content-main fade-in">
                             <div className="features-image">
                                 <img src={images.Features.FeatureImageThree} alt="" />
                             </div>

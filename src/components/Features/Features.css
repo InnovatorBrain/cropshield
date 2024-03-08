@@ -181,12 +181,68 @@
     color: black !important;
 }
 
+/* .features-content-main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 2rem auto;
+} */
+
+
+
+
+
+.features-content {
+    display: none;
+}
+
+.features-content.active {
+    display: block;
+}
+
 .features-content-main {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     margin: 2rem auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.features-content.active .features-content-main {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .features-image img {
     width: 200px;
