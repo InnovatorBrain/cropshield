@@ -20,22 +20,20 @@ const Features = () => {
                         <p>Features</p>
                     </div>
                     <p className="features-title">
-                        We Are Global Stakeholder
-                        Over 2000+ <span>Companies</span>
+                        We Empower Farmers Worldwide with Over 2000+ <span>Partners</span>
                     </p>
                     <p className='features-title-descriptions'>
-                        Appropriately enhance principle-centered innovation rather
-                        than high standards in platforms. Credibly orchestrate functional.
+                    Revolutionize traditional approaches with AI-driven innovation in CropShield. Ensure seamless functionality.
                     </p>
                     <div className="features-title-points-div">
                         <p className="features-title-points" onClick={() => toggleContent('content1')}>
-                            <TbPoint className='features-title-points-icons' /> Communicate orthogonal process
+                            <TbPoint className='features-title-points-icons' /> Facilitate streamlined communication processes.
                         </p>
                         <p className="features-title-points" onClick={() => toggleContent('content2')}>
-                            <TbPoint className='features-title-points-icons' /> Professionally grow cutting-edge paradigms
+                            <TbPoint className='features-title-points-icons' /> Cultivate cutting-edge paradigms adeptly.
                         </p>
                         <p className="features-title-points" onClick={() => toggleContent('content3')}>
-                            <TbPoint className='features-title-points-icons' /> Professionally grow cutting-edge paradigms
+                            <TbPoint className='features-title-points-icons' /> Foster pioneering paradigms adeptly.
                         </p>
                     </div>
                 </div>
@@ -43,7 +41,7 @@ const Features = () => {
                 <div className="features-right-side">
                     <div className="features-right-buttons-div">
                         <button className={activeButton === 'content1' ? 'active-button' : ''} onClick={() => toggleContent('content1')}>Full Satisfaction</button>
-                        <button className={activeButton === 'content2' ? 'active-button' : ''} onClick={() => toggleContent('content2')}>Expart Team</button>
+                        <button className={activeButton === 'content2' ? 'active-button' : ''} onClick={() => toggleContent('content2')}>Expert Team</button>
                         <button className={activeButton === 'content3' ? 'active-button' : ''} onClick={() => toggleContent('content3')}>Mission & Vission</button>
                     </div>
 
@@ -53,11 +51,11 @@ const Features = () => {
                                 <img src={images.Features.FeatureImageOne} alt="" />
                             </div>
                             <div className="features-image-points">
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
-                                <p><TbPoint className='features-title-points-icons' />Entums estibulum dignissim posuere </p>
-                                <p><TbPoint className='features-title-points-icons' />Quality users after Breed Applications. </p>
-                                <p><TbPoint className='features-title-points-icons' />Market Positioning Expertise. </p>
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
+                                <p><TbPoint className='features-title-points-icons' />Empowering Farmers with Smart Solutions. </p>
+                                <p><TbPoint className='features-title-points-icons' />Your Reliable Partner in Crop Insurance. </p>
+                                <p><TbPoint className='features-title-points-icons' />Leading the Way in Crop Insurance. </p>
+                                <p><TbPoint className='features-title-points-icons' />Experience the CropShield Advantage. </p>
+                                <p><TbPoint className='features-title-points-icons' />CropShield Redefines Crop Insurance Standards. </p>
                             </div>
                         </div>
                     </div>
@@ -67,11 +65,11 @@ const Features = () => {
                                 <img src={images.Features.FeatureImageTwo} alt="" />
                             </div>
                             <div className="features-image-points">
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
-                                <p><TbPoint className='features-title-points-icons' />Entums estibulum dignissim posuere </p>
-                                <p><TbPoint className='features-title-points-icons' />Quality users after Breed Applications. </p>
-                                <p><TbPoint className='features-title-points-icons' />Market Positioning Expertise. </p>
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
+                                <p><TbPoint className='features-title-points-icons' />Pioneering Solutions Beyond Conventional Ideas. </p>
+                                <p><TbPoint className='features-title-points-icons' />Focused on Delivering Excellence. </p>
+                                <p><TbPoint className='features-title-points-icons' />Crafting Solutions Tailored to Needs. </p>
+                                <p><TbPoint className='features-title-points-icons' />Driving Growth Through Expertise. </p>
+                                <p><TbPoint className='features-title-points-icons' />Guiding Your Success with Proven Strategies. </p>
                             </div>
                         </div>
                     </div>
@@ -81,11 +79,11 @@ const Features = () => {
                                 <img src={images.Features.FeatureImageThree} alt="" />
                             </div>
                             <div className="features-image-points">
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
-                                <p><TbPoint className='features-title-points-icons' />Entums estibulum dignissim posuere </p>
-                                <p><TbPoint className='features-title-points-icons' />Quality users after Breed Applications. </p>
-                                <p><TbPoint className='features-title-points-icons' />Market Positioning Expertise. </p>
-                                <p><TbPoint className='features-title-points-icons' />Rather than unique Idea. </p>
+                                <p><TbPoint className='features-title-points-icons' />Agricultural Transformation Beyond Traditional Methods. </p>
+                                <p><TbPoint className='features-title-points-icons' />Enabling Sustainable Growth for Farmers. </p>
+                                <p><TbPoint className='features-title-points-icons' />Committed to Delivering Quality Support. </p>
+                                <p><TbPoint className='features-title-points-icons' />Setting New Standards Through Strategic Positioning. </p>
+                                <p><TbPoint className='features-title-points-icons' />Fostering Resilience. </p>
                             </div>
                         </div>
                     </div>

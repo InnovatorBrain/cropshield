@@ -137,9 +137,10 @@
 }
 
 .features-title-points-icons {
-    font-size: 24px;
-    margin-right: 0.5rem;
+    font-size: 24px !important;
+    margin-right: 0.5rem !important;
     color: #1473e6;
+    flex-shrink: 0;
 }
 
 /* ---------LEFT_SIDE-End-------------- */
