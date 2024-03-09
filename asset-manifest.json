@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/cropshield/static/css/main.b3b9cc9d.css",
-    "main.js": "/cropshield/static/js/main.d85e9f0e.js",
+    "main.css": "/cropshield/static/css/main.666bfad9.css",
+    "main.js": "/cropshield/static/js/main.cfc3ad59.js",
     "static/media/slideImage.jpg": "/cropshield/static/media/slideImage.224d3f5567696ab37e03.jpg",
+    "static/media/okies.png": "/cropshield/static/media/okies.2bb22e91e8d0ace7b548.png",
     "static/media/Grain1.jpeg": "/cropshield/static/media/Grain1.472ee18aa414e9aa03d9.jpeg",
+    "static/media/ImageOneIs.png": "/cropshield/static/media/ImageOneIs.10649c1d031a6d44c3be.png",
     "static/media/supportOne.jpg": "/cropshield/static/media/supportOne.159eed3802e11231121c.jpg",
     "static/media/noun-weather.png": "/cropshield/static/media/noun-weather.ce8475c24d3766482280.png",
-    "static/media/Navbar-Logo.png": "/cropshield/static/media/Navbar-Logo.1fcc2476a7b5f07b5ab3.png",
     "static/media/clearmouse.mp3": "/cropshield/static/media/clearmouse.4948e72707f75a4e998a.mp3",
+    "static/media/img-2.png": "/cropshield/static/media/img-2.78b92028a501c8fbc177.png",
     "static/media/noun-agriculture.png": "/cropshield/static/media/noun-agriculture.062f32311ef09025114d.png",
+    "static/media/img-1.png": "/cropshield/static/media/img-1.1e3029ed50e90f9b9138.png",
     "static/media/noun-water.png": "/cropshield/static/media/noun-water.9c923f9c5d414c4c32ba.png",
+    "static/media/img-3.png": "/cropshield/static/media/img-3.a713463c09377bf5c35d.png",
     "index.html": "/cropshield/index.html",
-    "main.b3b9cc9d.css.map": "/cropshield/static/css/main.b3b9cc9d.css.map",
-    "main.d85e9f0e.js.map": "/cropshield/static/js/main.d85e9f0e.js.map"
+    "main.666bfad9.css.map": "/cropshield/static/css/main.666bfad9.css.map",
+    "main.cfc3ad59.js.map": "/cropshield/static/js/main.cfc3ad59.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3b9cc9d.css",
-    "static/js/main.d85e9f0e.js"
+    "static/css/main.666bfad9.css",
+    "static/js/main.cfc3ad59.js"
   ]
 }
