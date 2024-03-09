@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cropshield/static/css/main.666bfad9.css",
-    "main.js": "/cropshield/static/js/main.cfc3ad59.js",
+    "main.js": "/cropshield/static/js/main.fd8a9d13.js",
     "static/media/slideImage.jpg": "/cropshield/static/media/slideImage.224d3f5567696ab37e03.jpg",
     "static/media/okies.png": "/cropshield/static/media/okies.2bb22e91e8d0ace7b548.png",
     "static/media/Grain1.jpeg": "/cropshield/static/media/Grain1.472ee18aa414e9aa03d9.jpeg",
@@ -16,10 +16,10 @@
     "static/media/img-3.png": "/cropshield/static/media/img-3.a713463c09377bf5c35d.png",
     "index.html": "/cropshield/index.html",
     "main.666bfad9.css.map": "/cropshield/static/css/main.666bfad9.css.map",
-    "main.cfc3ad59.js.map": "/cropshield/static/js/main.cfc3ad59.js.map"
+    "main.fd8a9d13.js.map": "/cropshield/static/js/main.fd8a9d13.js.map"
   },
   "entrypoints": [
     "static/css/main.666bfad9.css",
-    "static/js/main.cfc3ad59.js"
+    "static/js/main.fd8a9d13.js"
   ]
 }
