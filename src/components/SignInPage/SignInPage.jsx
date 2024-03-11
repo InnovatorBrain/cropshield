@@ -41,19 +41,19 @@ function SignInPage() {
     return (
         <>
             <div className="SignInPageContainer">
-                <div className="RegisterPageLefttSide">
-                    <div className="breadcrumb">
+                <div className="SignInPageLefttSide">
+                    <div className="SignIn-breadcrumb">
                         <Link to="/">
-                            <FaHome className="Register-page-homeIcon" />
+                            <FaHome className="SignIn-page-homeIcon" />
                         </Link>
                         <span>/ Sign In</span>
                     </div>
-                    <div className="RegisterPageTitle-div">
-                        <h3 className='RegisterPageTitle'>Sign In to Your Account</h3>
-                        <p className='RegisterPageText'>Welcome back! Please enter your credentials.</p>
+                    <div className="SignInPageTitle-div">
+                        <h3 className='SignInPageTitle'>Sign In to Your Account</h3>
+                        <p className='SignInPageText'>Welcome back! Please enter your credentials.</p>
                     </div>
                 </div>
-                <div className="RegisterPageRightSide">
+                <div className="SignInPageRightSide">
                     <form className="form" onSubmit={handleSubmit}>
                         <span className="form-title">Sign In</span>
                         <label htmlFor="username" className="label">Username</label> {/* Change 'Email' to 'Username' */}
@@ -62,12 +62,12 @@ function SignInPage() {
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
                         {error && <p className="error">{error}</p>} {/* Display error message if login fails */}
                         <div className="passwordOptions">
-                            <Link to="/send-password-Email" className="Register-form-forgetPassword">Forget Password</Link>
+                            <Link to="/send-password-Email" className="SignIn-form-forgetPassword">Forget Password</Link>
                         </div>
                         <button type="submit" className="submit-button">Sign In</button>
-                        <div className='Register-page-if-accountexist'>
-                            <p className='Register-page-if-accounttext'>If you don't have an account</p>
-                            <Link to="/register" className='Register-page-if-accountlink'>Register Now</Link>
+                        <div className='SignIn-page-if-accountexist'>
+                            <p className='SignIn-page-if-accounttext'>If you don't have an account</p>
+                            <Link to="/register" className='SignIn-page-if-accountlink'>Register Now</Link>
                         </div>
                     </form>
                 </div>

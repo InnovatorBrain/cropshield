@@ -12,42 +12,42 @@
     padding: 3rem;
     width: 100%;
     /* height: 630px; */
-    height: 100vh;
+    height: auto;
 }
 
 /* LEFTSIDE */
-.RegisterPageLefttSide {
+.SignInPageLefttSide {
     display: flex;
     justify-content: flex-start;
-    width: 50%;
+    max-width: 50%;
     height: 500px;
     flex-direction: column;
     margin: auto 2rem;
     background-image: url(../../assets/RegisterPage/ImageOneIs.png);
-    background-size: cover;
+    background-size: contain !important;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.breadcrumb {
+.SignIn-breadcrumb {
     position: absolute;
     top: 3rem;
     left: 3rem;
 
 }
 
-.Register-page-homeIcon {
+.SignIn-page-homeIcon {
     color: white;
     font-size: 18px;
 }
 
-.breadcrumb>span {
+.SignIn-breadcrumb>span {
     color: white;
     font-family: var(--font-accent);
     font-size: 18px;
 }
 
-.RegisterPageTitle-div {
+.SignInPageTitle-div {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
@@ -55,7 +55,7 @@
     height: 100vh;
 }
 
-.RegisterPageTitle {
+.SignInPageTitle {
     font-family: var(--font-base);
     color: var(--color-Yellow);
     font-size: 35px;
@@ -64,7 +64,7 @@
     margin-top: auto;
 }
 
-.RegisterPageText {
+.SignInPageText {
     font-family: var(--font-base);
     color: white;
     font-size: 14px;
@@ -75,7 +75,7 @@
 
 /* RightSide */
 
-.RegisterPageRightSide {
+.SignInPageRightSide {
     display: flex;
     justify-content: flex-start;
     margin: auto;
@@ -119,17 +119,17 @@
     margin: 10px auto 10px 0px;
 }
 
-.Register-form-forgetPassword {
+.SignIn-form-forgetPassword {
     font-family: var(--font-base);
     color: white;
     font-size: 12px;
 }
 
-.Register-form-forgetPassword:hover {
+.SignIn-form-forgetPassword:hover {
     text-decoration: underline;
 }
 
-.Register-page-if-accountexist {
+.SignIn-page-if-accountexist {
     display: flex;
     justify-content: center;
     /* horizontally center align */
@@ -139,13 +139,13 @@
     width: 100%;
 }
 
-.Register-page-if-accounttext {
+.SignIn-page-if-accounttext {
     font-family: var(--font-base);
     color: white;
     font-size: 12px;
 }
 
-.Register-page-if-accountlink {
+.SignIn-page-if-accountlink {
     font-family: var(--font-base);
     color: white;
     font-size: 12px;
@@ -153,7 +153,7 @@
     margin-left: 10px;
 }
 
-.Register-page-if-accountlink:hover {
+.SignIn-page-if-accountlink:hover {
     text-decoration: underline;
     color: var(--color-LightGreen_a);
 }
@@ -220,66 +220,112 @@
     .SignInPageContainer {
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
-        height: auto;
+        margin: auto;
     }
 
     /* LEFTSIDE */
-    .RegisterPageLefttSide {
-        width: 100% !important;
+
+    .SignInPageLefttSide {
+        justify-content: center;
+        max-width: 100%;
+        height: 500px;
         flex-direction: column;
-        margin-top: 4rem;
+        margin: auto;
+        background-size: contain !important;
     }
 
-    .RegisterPageTitle {
-        font-size: 30px;
+    .SignIn-breadcrumb {
+        top: 2rem !important;
+        left: 2rem !important;
     }
 
-    .RegisterPageText {
+    .SignInPageTitle-div {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        height: 100vh;
+        overflow-x: none;
+    }
+
+    .SignInPageTitle {
+        font-family: var(--font-base);
+        color: var(--color-Yellow);
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: auto;
+    }
+
+    .SignInPageText {
+        font-family: var(--font-base);
+        color: white;
         font-size: 14px;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: 10px;
     }
 
     /* RightSide */
-    .RegisterPageRightSide {
+    .SignInPageRightSide {
         margin: auto;
-        justify-content: center !important;
-        align-items: center;
         max-width: 100%;
         width: 100%;
-        
     }
 }
 
 /* Media query for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
     .SignInPageContainer {
-
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
-        height: auto;
+        margin: auto;
     }
 
     /* LEFTSIDE */
-    .RegisterPageLefttSide {
-        width: 100%;
+
+    .SignInPageLefttSide {
+        justify-content: center;
+        max-width: 100%;
+        height: 500px;
         flex-direction: column;
-        margin-top: 4rem;
+        margin: auto;
+        background-size: contain !important;
     }
 
-    .RegisterPageTitle {
-        font-size: 30px;
+    .SignIn-breadcrumb {
+        top: 2rem !important;
+        left: 2rem !important;
     }
 
-    .RegisterPageText {
+    .SignInPageTitle-div {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        height: 100vh;
+        overflow-x: none;
+    }
+
+    .SignInPageTitle {
+        font-family: var(--font-base);
+        color: var(--color-Yellow);
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: auto;
+    }
+
+    .SignInPageText {
+        font-family: var(--font-base);
+        color: white;
         font-size: 14px;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: 10px;
     }
 
     /* RightSide */
-    .RegisterPageRightSide {
+    .SignInPageRightSide {
         margin: auto;
-        justify-content: center !important;
-        align-items: center;
         max-width: 100%;
         width: 100%;
     }
@@ -288,34 +334,56 @@
 /* Media query for screens between 768px and 991px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .SignInPageContainer {
-
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
-        height: auto;
-
+        margin: auto;
     }
 
     /* LEFTSIDE */
-    .RegisterPageLefttSide {
-        width: 100%;
+
+    .SignInPageLefttSide {
+        justify-content: center;
+        max-width: 100%;
+        height: 500px;
         flex-direction: column;
-        margin-top: 4rem;
+        margin: auto;
+        background-size: contain !important;
     }
 
-    .RegisterPageTitle {
-        font-size: 30px;
+    .SignIn-breadcrumb {
+        top: 2rem !important;
+        left: 2rem !important;
     }
 
-    .RegisterPageText {
+    .SignInPageTitle-div {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        height: 100vh;
+        overflow-x: none;
+    }
+
+    .SignInPageTitle {
+        font-family: var(--font-base);
+        color: var(--color-Yellow);
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: auto;
+    }
+
+    .SignInPageText {
+        font-family: var(--font-base);
+        color: white;
         font-size: 14px;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: 10px;
     }
 
     /* RightSide */
-    .RegisterPageRightSide {
+    .SignInPageRightSide {
         margin: auto;
-        justify-content: center !important;
-        align-items: center;
         max-width: 100%;
         width: 100%;
     }
