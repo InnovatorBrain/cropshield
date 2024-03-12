@@ -7,8 +7,7 @@ const ProfileBlock = () => {
     const [userData, setUserData] = useState({
         first_name: "",
         last_name: "",
-        email: "",
-        passwordLastChanged: ""
+        email: ""
     });
 
     useEffect(() => {
@@ -16,7 +15,7 @@ const ProfileBlock = () => {
     }, []);
 
     const fetchUserDataFromAPI = async () => {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('accessToken');
 
         try {
             const response = await axios.get('http://127.0.0.1:8000/auth/profile-data/', {
@@ -42,7 +41,8 @@ const ProfileBlock = () => {
                 </div>
                 <div className="profileBlock-email-container">
                     <p className="profileBlock-text">{userData.email}</p>
-                    <p className="profileBlock-text">Password last changed {userData.passwordLastChanged}</p>
+                    {/* Remove the line below */}
+                    {/* <p className="profileBlock-text">Password last changed {userData.passwordLastChanged}</p> */}
                     <Link to="/change-password" className="profileBlock-password-link">Change Password</Link>
                 </div>
             </div>

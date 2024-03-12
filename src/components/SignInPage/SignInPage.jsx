@@ -6,7 +6,7 @@ import "./SignInPage.css";
 
 function SignInPage() {
     const [formData, setFormData] = useState({
-        username: '', // Change 'email' to 'username'
+        username: '',
         password: ''
     });
 
@@ -24,19 +24,20 @@ function SignInPage() {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:8000/auth/SignIn/', formData);
-            console.log(response.data); // Log response data for debugging
-            // Check if login was successful based on response data
+            console.log(response); // Log entire response object
             if (response.status === 200) {
-                // Redirect user to dashboard upon successful login
+                localStorage.setItem('accessToken', response.data.token.access);
+                localStorage.setItem('refreshToken', response.data.token.refresh);
                 window.location.href = '/dashboard';
             } else {
-                setError('Login failed. Please try again.'); // Handle other response statuses if needed
+                setError('Login failed. Please try again.');
             }
         } catch (error) {
-            console.error('Login failed:', error);
-            setError('Login failed. Please try again.'); // Display error message to the user
+            console.error('Login failed:', error); // Log the error for debugging
+            setError('Login failed. Please try again.');
         }
     };
+
 
     return (
         <>
@@ -56,11 +57,11 @@ function SignInPage() {
                 <div className="SignInPageRightSide">
                     <form className="form" onSubmit={handleSubmit}>
                         <span className="form-title">Sign In</span>
-                        <label htmlFor="username" className="label">Username</label> {/* Change 'Email' to 'Username' */}
-                        <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required className="input" /> {/* Change 'email' to 'username' */}
+                        <label htmlFor="username" className="label">Username</label>
+                        <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} required className="input" />
                         <label htmlFor="password" className="label">Password</label>
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required className="input" />
-                        {error && <p className="error">{error}</p>} {/* Display error message if login fails */}
+                        {error && <p className="error">{error}</p>}
                         <div className="passwordOptions">
                             <Link to="/send-password-Email" className="SignIn-form-forgetPassword">Forget Password</Link>
                         </div>

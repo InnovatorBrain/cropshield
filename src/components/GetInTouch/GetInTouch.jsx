@@ -10,6 +10,7 @@ const GetInTouch = () => {
         email: '',
         message: ''
     });
+    const [isSuccess, setIsSuccess] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,51 +20,40 @@ const GetInTouch = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('YOUR_API_ENDPOINT', formData);
+            const response = await axios.post('http://127.0.0.1:8000/contactmessage/', formData);
             console.log('Message sent:', response.data);
             setFormData({
                 name: '',
                 email: '',
                 message: ''
             });
-            // You can add further handling such as showing a success message or resetting the form here
+            setIsSuccess(true);
+            setTimeout(() => setIsSuccess(false), 3000); // Hide the success message after 3 seconds
         } catch (error) {
             console.error('Error sending message:', error);
-            // You can add error handling logic here
         }
     };
 
-
-    // ---------------CLICK SOUND Start--------------
     const [audio] = useState(new Audio(clickSound));
-
     const playClickSound = () => {
         audio.play();
     };
 
     useEffect(() => {
-        // Clean up the audio instance when the component unmounts
         return () => {
             audio.pause();
             audio.currentTime = 0;
         };
     }, [audio]);
-    // ---------------CLICK SOUND End--------------
+
     return (
         <>
             <div className="GetInTouchContainer">
                 <div className="GetInTouchLeftSide">
-                    <p className="GetInTouchHint">
-                        Get In Touch
-                    </p>
-                    <h2 className="GetInTouchTitle">
-                        Reach Out and Grow Your Financial Potential
-                    </h2>
-                    <p className="GetInTouchText">
-                        Ready to Cultivate Your Financial Growth? Contact Us Today and Unlock the Potential of Agriculture Finance!
-                    </p>
+                    <p className="GetInTouchHint">Get In Touch</p>
+                    <h2 className="GetInTouchTitle">Reach Out and Grow Your Financial Potential</h2>
+                    <p className="GetInTouchText">Ready to Cultivate Your Financial Growth? Contact Us Today and Unlock the Potential of Agriculture Finance!</p>
 
-                    {/* FORM */}
                     <form onSubmit={handleSubmit} className="form">
                         <label htmlFor="name" className="label">Name</label>
                         <input
@@ -94,6 +84,7 @@ const GetInTouch = () => {
                             value={formData.message}
                             onChange={handleChange}
                         />
+                        {isSuccess && <p className="contact-message-success-popup">Message sent successfully!</p>}
                         <button type="submit" className="submit-button" onClick={playClickSound}>Send Message</button>
                     </form>
                 </div>

@@ -36,9 +36,9 @@
 }
 
 .profileBlock-text-username {
-    font-size: 22px;
+    font-size: 18px;
     font-family: var(--font-base);
-    color: var(--color-DarkGreen);
+    color: black;
     margin: 1rem auto;
 }
 .profileBlockButton{

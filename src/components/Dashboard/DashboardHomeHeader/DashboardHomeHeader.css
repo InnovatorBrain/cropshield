@@ -21,7 +21,8 @@
 }
 
 .dashHomeHeader-username {
-    font-weight: bold;
+    font-family: var(--font-base);
+    font-size: 30px;
     color: black;
 }
 
