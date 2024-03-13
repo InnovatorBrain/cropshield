@@ -55,10 +55,15 @@
 
 .DashHeader-user-img {
     border: 1px solid var(--color-DarkGreen);
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     background-color: var(--color-asd2);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .DashHeader-user-img-span {

@@ -5,17 +5,30 @@ import { FaHome } from 'react-icons/fa';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import axios from 'axios';
 
+
 function DashHeader() {
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState({
+    first_name: "",
+    last_name: "",
+    profile_picture: {
+      image: null
+    }
+  });
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        // Simulating a GET request to fetch user data from an API
-        const response = await axios.get('https://jsonplaceholder.typicode.com/users/1');
+        const token = localStorage.getItem('accessToken');
+        const response = await axios.get('http://127.0.0.1:8000/auth/profile-data/', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
         setUserData(response.data);
       } catch (error) {
         console.error('Error fetching user data:', error);
+        setError("Failed to fetch user data");
       }
     };
 
@@ -31,11 +44,10 @@ function DashHeader() {
         <span>/ Dashboard</span>
       </div>
       {/* Search Input starts */}
-
       <input
-        className="DashHeader-input" // Set the class name
+        className="DashHeader-input"
         name="text"
-        placeholder="Search..." // Set the placeholder text
+        placeholder="Search..."
         type="search"
       />
       {/* Search Input ends*/}
@@ -45,14 +57,19 @@ function DashHeader() {
           <IoMdNotificationsOutline className="DashHeader-notification-id" />
         </Link>
         <div className="DashHeader-user">
-          <img
-            src={userData.image} // Assuming your API returns the image URL
-            alt={userData.name} // Assuming your API returns the user's name
-            className="DashHeader-user-img"
-          />
-          <span className="DashHeader-user-img-span">{userData.name}</span>
+          {userData.profile_picture && userData.profile_picture.image ? (
+            <img
+              src={`http://127.0.0.1:8000${userData.profile_picture.image}`}
+              alt={`${userData.first_name} ${userData.last_name}`}
+              className="DashHeader-user-img"
+            />
+          ) : (
+            <div className="DashHeader-user-img-placeholder">No Image</div>
+          )}
+          <span className="DashHeader-user-img-span">{userData.first_name} {userData.last_name}</span>
         </div>
       </div>
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 }
